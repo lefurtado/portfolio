@@ -1,7 +1,8 @@
 import Header from '../../components/Header';
 import Contact from '../../components/Contact';
-import './styles.scss';
 import About from '../../components/About';
+import ContactIcons from '../../components/ContactIcons';
+import './styles.scss';
 
 export default function Home() {
     return (
@@ -11,6 +12,7 @@ export default function Home() {
                 <Contact />
             </div>
             <About />
+            <ContactIcons />
         </div>
     )
 }
