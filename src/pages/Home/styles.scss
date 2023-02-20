@@ -1,0 +1,13 @@
+@import '../../theme/variables';
+@import '../../../public/assets/styles/reset.scss';
+
+body {
+    font-family: 'DM Sans', sans-serif;
+    background-color: $dark;
+    max-width: 312px;
+    margin: auto;
+}
+
+.contact {
+    margin-top: 56px;
+}

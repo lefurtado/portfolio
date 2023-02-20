@@ -1,0 +1,26 @@
+@import '../../../theme/variables';
+
+.btn_container {
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.btn_container button {
+    font-size: 14px;
+    height: 42px;
+    border: none;
+}
+
+#cv {
+    background-color: $green-light;
+    width: 143px;
+    font-family: 'DM Sans', sans-serif;
+}
+
+#contato {
+    color: $white;
+    border: 1px solid #333333;
+    background-color: transparent;
+    width: 157px;
+    font-family: 'DM Sans', sans-serif;
+}

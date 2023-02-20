@@ -1,0 +1,23 @@
+@import '../../../../public/assets/styles/variables.scss';
+
+.flex {
+    display: flex;
+}
+
+.hamburger {
+    flex-direction: column;
+    gap: 4px;
+}
+
+.maior {
+    background-color: $white;
+    width: 28px;
+    height: 1px;
+}
+
+.menor {
+    background-color: $white;
+    width: 14px;
+    height: 1px;
+    margin-left: 14px;
+}
