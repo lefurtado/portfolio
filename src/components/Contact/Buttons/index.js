@@ -5,10 +5,14 @@ export default function Buttons() {
         <div>
             <div class="btn_container flex">
                 <div>
-                    <button id="cv">Download CV</button>
+                    <a href="https://drive.google.com/file/d/1cDrbiVtDp-wPasUcpqlx113ouDAjcJja/view?usp=sharing" target='_blank' rel='noreferrer'>
+                        <button id="cv">Download CV</button>
+                    </a>
                 </div>
                 <div>
-                    <button id="contato">Entrar em contato</button>
+                    <a href="https://wa.me/5511971815551" target='_blank' rel='noreferrer'>
+                        <button id="contato">Entrar em contato</button>
+                    </a>
                 </div>
             </div>
         </div>
