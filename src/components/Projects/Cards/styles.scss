@@ -1,0 +1,43 @@
+@import '../../../theme/variables';
+
+.card-container {
+    background-color: $gray-400;
+    max-width: 312px;
+    min-height: 250px;
+    border: 1px solid $gray-200;    
+}
+
+.image-container {
+    width: 260px;
+    height: 133px;
+    background-color: $dark;
+    border: 1px solid $gray-200;
+    margin: 16px 16px;
+}
+
+.card-description {
+    flex-direction: column;
+    width: 260px;
+    margin: 16px auto;
+    gap: 10px;
+}
+
+.card-description h2 {
+    color: $white;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.card-description p {
+    color: $gray;
+    font-size: 13px;
+    font-weight: 400;
+}
+
+.card-section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 32px;
+}
