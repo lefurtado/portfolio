@@ -1,5 +1,11 @@
 import './styles.scss';
-import { FaWhatsapp, FaRegEnvelope, FaGithub, FaRegSmileWink } from 'react-icons/fa';
+import {
+    FaWhatsapp,
+    FaRegEnvelope,
+    FaGithub,
+    FaRegSmileWink,
+    FaLinkedinIn
+} from 'react-icons/fa';
 
 export default function ContactIcons() {
     const iconComp = [
@@ -26,6 +32,12 @@ export default function ContactIcons() {
             titulo: 'WhatsApp',
             descricao: '(11) 97181-5551',
             icone: <FaWhatsapp size={25} />,
+        },
+        {
+            id: 4,
+            titulo: 'LinkedIn',
+            descricao: 'linkedin.com/in/le-furtado/',
+            icone: <FaLinkedinIn size={25} />,
         }
     ]
 
