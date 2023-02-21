@@ -3,6 +3,9 @@
 .footer {
     height: 40px;
     background-color: $gray-400;
+    flex-direction: column;
+    justify-content: center;
+    margin-top: 56px;
 }
 
 .footer p {
