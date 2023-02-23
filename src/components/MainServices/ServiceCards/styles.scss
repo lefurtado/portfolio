@@ -1,0 +1,29 @@
+@import '../../../theme/variables';
+
+.service_card_section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 40px;
+}
+
+.service_card_container {
+    background-color: $gray-400;
+    min-width: 312px;
+    min-height: 140px;
+    border-bottom: 3px solid $green-light;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.service_card_icon {
+    color: $green-light;
+}
+
+.title_card_container p {
+    color: $gray;
+    font-size: 14px;
+}
