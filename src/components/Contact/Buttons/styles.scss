@@ -12,10 +12,18 @@
     cursor: pointer;
 }
 
+.btn_container a {
+    text-decoration: none;
+}
+
 #cv {
     background-color: $green-light;
     width: 143px;
     font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
 }
 
 #contato {
