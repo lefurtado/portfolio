@@ -4,7 +4,7 @@ import './styles.scss';
 export default function Projects() {
     return (
         <div>
-            <div className='project'>
+            <div data-aos='fade-down' className='project'>
                 <h2>Projetos</h2>
             </div>
             <Cards />

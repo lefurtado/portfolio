@@ -4,7 +4,7 @@ import './styles.scss';
 export default function Skill() {
     return (
         <div>
-            <div className='skill'>
+            <div data-aos='fade-left' className='skill'>
                 <h2>Minhas skills</h2>
             </div>
             <SkillCard />

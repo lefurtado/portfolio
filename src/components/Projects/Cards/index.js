@@ -33,7 +33,7 @@ export default function Cards() {
     return (
         <div className='card-section flex'>
             {projects.map((project) => (
-                <div key={project.id} className="card-container">
+                <div data-aos='fade-right' key={project.id} className="card-container">
                     <div className="image-container">
                         <img src={project.thumb} alt="" height='133' />
                     </div>

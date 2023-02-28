@@ -46,7 +46,7 @@ export default function ContactIcons() {
     ]
 
     return (
-        <div className='main-container-icon flex'> 
+        <div data-aos='fade-up' className='main-container-icon flex'>
 
             {iconComp.map((icon) => (
                 <a key={icon.id} href={icon.link} target='_blank' rel='noreferrer'>
