@@ -11,7 +11,7 @@ import './styles.scss';
 export default function Home() {
     return (
         <div>
-            <div className="teste">
+            <div className="page_container">
                 <Header />
                 <div className='contact'>
                     <Contact />
