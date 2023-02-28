@@ -1,11 +1,19 @@
+import Typewriter from 'typewriter-effect';
 import './styles.scss';
 
 export default function Name() {
-    return(
+    return (
         <div>
             <div className="titulo_principal">
-                    <h1>Olá, eu sou o Lê Furtado :)</h1>
-                </div>
+                <Typewriter
+                    options={{
+                        strings: 'Olá, eu sou o Lê Furtado :)',
+                        autoStart: true,
+                        wrapperClassName: 'titulo_principal',
+                        delay: 55
+                    }}
+                />
+            </div>
         </div>
     )
 }
