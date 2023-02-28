@@ -1,0 +1,22 @@
+@import '../../../theme/variables';
+
+.skill_card_section {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    margin-top: 32px;
+}
+
+.skill_card_container {
+    background-color: $gray-400;
+    min-width: 90px;
+    min-height: 90px;
+    border: 1px solid $gray-200;
+    justify-content: center;
+    align-items: center;
+}
+
+.skill_icon {
+    color: $green-light;
+}

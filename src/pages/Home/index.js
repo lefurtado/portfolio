@@ -4,6 +4,7 @@ import About from '../../components/About';
 import ContactIcons from '../../components/ContactIcons';
 import Projects from '../../components/Projects';
 import MainServices from '../../components/MainServices';
+import Skill from '../../components/Skill';
 import Footer from '../../components/Footer';
 import './styles.scss';
 
@@ -19,6 +20,7 @@ export default function Home() {
                 <ContactIcons />
                 <Projects />
                 <MainServices />
+                <Skill />
             </div>
             <div>
                 <Footer />
