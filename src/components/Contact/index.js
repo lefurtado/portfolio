@@ -7,13 +7,13 @@ import './styles.scss';
 export default function Contact() {
     return (
         <>
-            <div className='flip flex'>
+            <div id='home' className='flip flex'>
                 <div className='contact-container flex'>
                     <Name />
                     <Developer />
                     <Buttons />
                 </div>
-                <div className='illustration'>
+                <div data-aos='zoom-in' className='illustration'>
                     <img src={illustration} alt="" />
                 </div>
             </div>
