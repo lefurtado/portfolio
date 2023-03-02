@@ -7,6 +7,11 @@ export default function Navbar() {
             <nav>
                 <ul className='navbar_desktop flex'>
                     <li className='list_item'>
+                        <Link to="home" spy={true} smooth={true} offset={-250} duration={650}>
+                            Início
+                        </Link>
+                    </li>
+                    <li className='list_item'>
                         <Link to="about" spy={true} smooth={true} offset={-150} duration={650}>
                             Sobre mim
                         </Link>
@@ -17,7 +22,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className='list_item'>
-                        <Link to="services" spy={true} smooth={true} duration={650}>
+                        <Link to="services" spy={true} smooth={true} offset={-150} duration={650}>
                             Serviços
                         </Link>
                     </li>
