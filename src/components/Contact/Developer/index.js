@@ -9,7 +9,7 @@ export default function Developer() {
                         strings: 'Desenvolvedor Front-End',
                         autoStart: true,
                         wrapperClassName: 'developer',
-                        delay: 55
+                        delay: 'natural'
                     }}
                 />
         </div>
