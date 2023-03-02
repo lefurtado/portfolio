@@ -29,4 +29,14 @@
     .navbar_menu {
         display: block;
     }
+
+    .header {
+        background-color: $dark;
+        align-items: center;
+        margin: auto;
+        height: 100px;
+        position: sticky;
+        top: 0;
+        z-index: 6;
+    }
 }

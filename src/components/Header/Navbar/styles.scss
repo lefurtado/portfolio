@@ -13,12 +13,6 @@
     cursor: pointer;
 }
 
-.list_item:hover {
-    border-bottom: 2px solid $green-light;
-    color: $green-light;
-    transition: all 100ms;
-}
-
 .list_item a:hover {
     color: $green-light;
     transition: all 100ms;
