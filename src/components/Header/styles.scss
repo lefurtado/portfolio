@@ -1,4 +1,4 @@
-@import '../../../public/assets/styles/variables.scss';
+@import '../../theme/variables';
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 
 .portfolio {
@@ -8,7 +8,25 @@
     color: $white;
 }
 
+.navbar_menu {
+    display: none;
+}
+
 .header {
     margin-top: 24px;
     justify-content: space-between;
+}
+
+@media(min-width: 1280px) {
+    .portfolio {
+        font-size: 26px;
+    }
+
+    .hamburger_menu {
+        display: none;
+    }
+
+    .navbar_menu {
+        display: block;
+    }
 }

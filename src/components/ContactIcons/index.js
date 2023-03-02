@@ -49,17 +49,17 @@ export default function ContactIcons() {
         <div data-aos='fade-up' className='main-container-icon flex'>
 
             {iconComp.map((icon) => (
-                <a key={icon.id} href={icon.link} target='_blank' rel='noreferrer'>
-                    <div className='icon-container flex'>
+                <div key={icon.id} className='icon-container flex'>
+                    <a href={icon.link} target='_blank' rel='noreferrer'>
                         <div className="circle flex">
                             <div className="icon">
                                 {icon.icone}
                             </div>
                         </div>
-                        <h2>{icon.titulo}</h2>
-                        <p>{icon.descricao}</p>
-                    </div>
-                </a>
+                    </a>
+                    <h2>{icon.titulo}</h2>
+                    <p>{icon.descricao}</p>
+                </div>
             ))}
         </div>
     )

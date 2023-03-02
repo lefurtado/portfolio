@@ -1,0 +1,25 @@
+@import '../../../theme/variables';
+
+.navbar_desktop {
+    display: flex;
+    width: 450px;
+    justify-content: space-between;
+}
+
+.navbar_desktop li a {
+    text-decoration: none;
+    color: $white;
+    transition: all 100ms;
+    cursor: pointer;
+}
+
+.list_item:hover {
+    border-bottom: 2px solid $green-light;
+    color: $green-light;
+    transition: all 100ms;
+}
+
+.list_item a:hover {
+    color: $green-light;
+    transition: all 100ms;
+}

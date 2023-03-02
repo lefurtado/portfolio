@@ -1,8 +1,14 @@
-@import '../../../../public/assets/styles/variables';
+@import '../../../theme/variables';
 
 .developer {
     font-size: 16px;
     font-weight: 500;
     color: $gray;
     text-align: center;
+}
+
+@media(min-width: 1280px) {
+    .developer {
+        font-size: 18px;
+    }
 }

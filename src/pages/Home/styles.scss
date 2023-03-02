@@ -1,5 +1,5 @@
 @import '../../theme/variables';
-@import '../../../public/assets/styles/reset.scss';
+@import '../../theme/reset.scss';
 
 body {
     font-family: 'DM Sans', sans-serif;
@@ -12,4 +12,15 @@ body {
 
 .contact {
     margin-top: 56px;
+}
+
+@media(min-width: 1280px) {
+    .page_container {
+        max-width: 1110px;
+        margin: auto;
+    }
+
+    .contact {
+        margin-top: 100px;
+    }
 }

@@ -2,7 +2,7 @@ import './styles.scss';
 
 export default function About() {
     return (
-        <div data-aos='fade-up'>
+        <div id='about' data-aos='fade-up'>
             <div className="about-container flex">
                 <div>
                     <h2>Sobre mim</h2>

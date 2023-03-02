@@ -1,4 +1,4 @@
-@import '../../../theme/variables';
+@import "../../../theme/variables";
 
 .service_card_section {
     flex-wrap: wrap;
@@ -26,4 +26,26 @@
 .title_card_container p {
     color: $gray;
     font-size: 14px;
+}
+
+@media (min-width: 1280px) {
+    .service_card_container {
+        width: 340px;
+        height: 230px;
+        align-items: baseline;
+        gap: 50px;
+    }
+
+    .service_card_icon {
+        scale: 1.5;
+    }
+
+    .service_card_icon, .title_card_container {
+        margin-left: 30px;
+    }
+
+    .title_card_container p {
+        width: 120px;
+        font-size: 32px;
+    }
 }

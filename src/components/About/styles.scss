@@ -18,3 +18,20 @@
     line-height: 20px;
     font-size: 14px;
 }
+
+@media(min-width: 1280px) {
+    .about-container {
+        max-width: 750px;
+        margin: auto;
+        margin-top: 120px;
+    }
+
+    .about-container h2 {
+        font-size: 32px;
+    }
+
+    .about-container p {
+        line-height: 30px;
+        font-size: 18px;
+    }
+}

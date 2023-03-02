@@ -3,7 +3,7 @@ import './styles.scss';
 
 export default function MainServices() {
     return (
-        <div data-aos='fade-up'>
+        <div id='services' data-aos='fade-up'>
             <div className="services">
                 <h2>
                     Serviços

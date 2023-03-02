@@ -7,3 +7,10 @@
     font-weight: 700;
     margin-top: 56px;
 }
+
+@media(min-width: 1280px) {
+    .project h2 {
+        font-size: 32px;
+        margin-top: 120px;
+    }
+}

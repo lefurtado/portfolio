@@ -1,4 +1,9 @@
 import './styles.scss';
+import visonmtel from '../../../assets/images/vison-motel-tumb.png';
+import lol from '../../../assets/images/lol-tumb.png';
+import trato from '../../../assets/images/trato-tech-tumb.png';
+import login from '../../../assets/images/login-dashboard-tumb.png';
+import secretWord from '../../../assets/images/secret-word-tumb.png';
 
 export default function Cards() {
     const projects = [
@@ -6,27 +11,27 @@ export default function Cards() {
             id: 1,
             nome: 'Vison Motel',
             tecnologias: 'HTML, CSS e Javascript',
-            thumb: '/assets/images/vison-motel-tumb.png'
+            thumb: visonmtel
         }, {
             id: 2,
             nome: 'League of Legends',
             tecnologias: 'HTML, CSS e Javascript',
-            thumb: '/assets/images/lol-tumb.png'
+            thumb: lol
         }, {
             id: 3,
             nome: 'Trato-Tech',
             tecnologias: 'React, Redux, CSS e Javascript',
-            thumb: '/assets/images/trato-tech-tumb.png'
+            thumb: trato
         }, {
             id: 4,
             nome: 'Login Dashboard',
             tecnologias: 'React, ContextAPI, ChakraUI e Styled Components',
-            thumb: '/assets/images/login-dashboard-tumb.png'
+            thumb: login
         }, {
             id: 5,
             nome: 'Secret Word',
             tecnologias: 'React, HTML, CSS e Javascript',
-            thumb: '/assets/images/secret-word-tumb.png'
+            thumb: secretWord
         }
     ]
 

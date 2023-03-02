@@ -1,4 +1,5 @@
 import { BsCodeSlash, BsPhone } from 'react-icons/bs';
+import { DiReact } from "react-icons/di";
 import './styles.scss';
 
 export default function ServiceCards() {
@@ -12,6 +13,11 @@ export default function ServiceCards() {
             id: 2,
             icone: <BsPhone size={35} />,
             descricao: 'Sites responsivos'
+        },
+        {
+            id: 3,
+            icone: <DiReact size={35} />,
+            descricao: 'Utilização de frameworks'
         }
     ]
 
