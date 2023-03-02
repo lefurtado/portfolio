@@ -12,7 +12,7 @@ export default function Navbar() {
                         </Link>
                     </li>
                     <li className='list_item'>
-                        <Link to="projects" spy={true} smooth={true} offset={-50} duration={650}>
+                        <Link to="projects" spy={true} smooth={true} offset={-150} duration={650}>
                             Projetos
                         </Link>
                     </li>
