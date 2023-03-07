@@ -4,8 +4,11 @@ import {
     DiHtml5,
     DiJsBadge,
     DiReact,
-    DiSass
+    DiSass,
+    DiNodejsSmall,
+    DiMysql
 } from "react-icons/di";
+import { SiTypescript } from "react-icons/si";
 import './styles.scss';
 
 export default function SkillCard() {
@@ -33,6 +36,18 @@ export default function SkillCard() {
         {
             id: 6,
             icone: <DiGit size={55} />
+        },
+        {
+            id: 7,
+            icone: <DiNodejsSmall size={55} />
+        },
+        {
+            id: 8,
+            icone: <DiMysql size={55} />
+        },
+        {
+            id: 9,
+            icone: <SiTypescript size={55} />
         },
     ]
 
