@@ -9,9 +9,12 @@ export default function About() {
                 </div>
                 <div>
                     <p>
-                        Profissional da área da tecnologia, foco no front-end com bastante 
-                        conhecimento de ferramentas do back. Experiência em React, Javascript, 
-                        HTML5, CSS, Git, Github.
+                        Primeiramente seja muito bem vindo ao meu portfólio!
+                        Estou passando por transição de carreira e sempre buscando me aperfeiçoar
+                        nas tecnologias que utilizo no dia-a-dia, sou um
+                        Desenvolvedor Web Fullstack, com foco no front-end e 
+                        bastante vontade de aprender. Experiência em React, Javascript, 
+                        HTML5, CSS, Git, Github, NodeJS, MySQL, TypeScript.
                         Atualmente cursando tecnologia em Análise e Desenvolvimento de Sistemas 
                         na faculdade Cruzeiro do Sul.
                     </p>
