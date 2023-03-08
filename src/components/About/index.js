@@ -9,11 +9,13 @@ export default function About() {
                 </div>
                 <div>
                     <p>
-                        Olá! Meu nome é Leandro Furtado, sou um profissional em transição de carreira 
-                        e atualmente estou cursando Análise e Desenvolvimento de Sistemas 
-                        na faculdade Cruzeiro do Sul. Meu objetivo é usar minhas habilidades e 
+                        Olá! Meu nome é Leandro Furtado, sou um profissional em transição de carreira
+                        e atualmente estou cursando Análise e Desenvolvimento de Sistemas
+                        na faculdade Cruzeiro do Sul. Meu objetivo é usar minhas habilidades e
                         conhecimentos que adquiri ao longo da minha jornada de estudos e criar experiências
-                        de usuário excepcionais e impactantes por meio da tecnologia.
+                        de usuário excepcionais e impactantes por meio da tecnologia. Eu sou apaixonado por
+                        desafios e estou sempre em busca de novos projetos que possam me desafiar a crescer
+                        e aprender mais.
                         {/* Primeiramente seja muito bem vindo ao meu portfólio!
                         Estou passando por transição de carreira e sempre buscando me aperfeiçoar
                         nas tecnologias que utilizo no dia-a-dia, sou um
@@ -22,6 +24,11 @@ export default function About() {
                         HTML5, CSS, Git, Github, NodeJS, MySQL, TypeScript.
                         Atualmente cursando tecnologia em Análise e Desenvolvimento de Sistemas
                         na faculdade Cruzeiro do Sul. */}
+                    </p>
+                    <br />
+                    <p>
+                        Estou entusiasmado em fazer parte de uma equipe de desenvolvimento
+                        e contribuir para o sucesso do projeto.
                     </p>
                     {/* <br />
                     <p>
