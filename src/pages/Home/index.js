@@ -3,7 +3,6 @@ import Header from '../../components/Header';
 import Contact from '../../components/Contact';
 import About from '../../components/About';
 import ContactIcons from '../../components/ContactIcons';
-import Formation from '../../components/Formation';
 import Projects from '../../components/Projects';
 import MainServices from '../../components/MainServices';
 import Skill from '../../components/Skill';
@@ -26,7 +25,6 @@ export default function Home() {
                 </div>
                 <About />
                 <ContactIcons />
-                <Formation />
                 <Projects />
                 <MainServices />
                 <Skill />
