@@ -39,7 +39,7 @@ export default function ContactIcons() {
     ]
 
     return (
-        <div data-aos='fade-up' className='main-container-icon flex'>
+        <div data-aos='fade-right' className='main-container-icon flex'>
 
             {iconComp.map((icon) => (
                 <div key={icon.id} className='icon-container flex'>

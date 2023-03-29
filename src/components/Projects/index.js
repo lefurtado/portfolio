@@ -3,8 +3,8 @@ import './styles.scss';
 
 export default function Projects() {
     return (
-        <div id='projects'>
-            <div data-aos='fade-down' className='project'>
+        <div data-aos='fade-right' id='projects'>
+            <div className='project'>
                 <h2>Projetos</h2>
             </div>
             <Cards />
