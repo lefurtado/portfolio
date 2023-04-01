@@ -16,7 +16,7 @@ export default function Cards() {
             tecnologias: 'HTML, CSS e Javascript',
             thumb: visonmtel,
             video: 'https://streamable.com/e/ood6ej?autoplay=1',
-            descricao: <p>Daily Weather é uma aplicação web que exibe a condição climática de todas as cidades, bairros, estados ou países do mundo. Obtendo tanto os dados da temperatura atual, quanto os dos próximos 7 dias, além da velocidade do vento, nível de umidade, data/hora e temperatura máxima e mínima.
+            descricao: <p>O projeto Vision Motel faz parte de um teste prático para uma vaga Front End, o objetivo do projeto era se basear num modelo Figma fornecido aos candidatos e produzir o site de forma responsiva utilizando HTML, CSS e Javascript.
                 <br />
                 <br />
                 Esse projeto foi desenvolvido com as seguintes ferramentas:
@@ -26,16 +26,9 @@ export default function Cards() {
                 <br />
                 • Vanilla JavaScript;
                 <br />
-                • Compilador SASS;
+                • CSS;
                 <br />
-                • Unsplash API;
-                <br />
-                • Open Weather API (One Call &amp; Current Weather Data);
-                <br />
-                • LocalStorage API;
-                <br />
-                • Moment.js;
-                <br />
+                • Bootstrap;
             </p>,
             deploy: 'https://visonmotel.vercel.app/',
             github: 'https://github.com/lefurtado/visonmotel'
