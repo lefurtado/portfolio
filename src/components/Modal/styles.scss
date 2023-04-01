@@ -1,0 +1,91 @@
+@import "../../theme/variables";
+
+body.active-modal {
+    overflow-y: hidden;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 1000;
+    background-color: rgb(0, 0, 0, 0.6);
+}
+
+.modal_container {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 1300px;
+    height: 500px;
+    background-color: $gray-400;
+    transform: translate(-50%, -50%);
+}
+
+.modal_teste {
+    color: $white;
+    padding: 20px;
+    gap: 1.5rem;
+}
+
+.title_container {
+    margin-top: 20px;
+}
+
+.title_container h2 {
+    font-size: 28px;
+    font-weight: 700;
+}
+
+.description_content {
+    margin-top: 10px;
+    color: $gray;
+    line-height: 1.5rem;
+}
+
+.close_btn {
+    cursor: pointer;
+    position: fixed;
+    right: 2px;
+    top: 2px;
+    color: $green-light;
+}
+
+.links {
+    margin-left: 20px;
+    text-align: center;
+    width: 400px;
+    justify-content: space-between;
+}
+
+.deploy {
+    padding: 10px;
+    background-color: $green-light;
+    width: 150px;
+}
+
+.github {
+    padding: 10px;
+    background-color: $green-light;
+    width: 150px;
+}
+
+.links a {
+    color: $dark;
+    text-decoration: none;
+}
+
+.position {
+    color: white;
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(255,255,255, 0.5);
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: 1000;
+}
