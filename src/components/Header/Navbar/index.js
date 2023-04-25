@@ -1,11 +1,11 @@
-import './styles.scss';
+import { NavbarStyled } from './Navbar.styles';
 import { Link } from 'react-scroll';
 
 export default function Navbar() {
     return (
         <div>
             <nav>
-                <ul className='navbar_desktop flex'>
+                <NavbarStyled>
                     <li className='list_item'>
                         <Link to="home" spy={true} smooth={true} offset={-250} duration={650}>
                             Início
@@ -31,7 +31,7 @@ export default function Navbar() {
                             Minhas skills
                         </Link>
                     </li>
-                </ul>
+                </NavbarStyled>
             </nav>
         </div>
     )
