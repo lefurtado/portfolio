@@ -9,7 +9,8 @@ import Skill from '../../components/Skill';
 import Footer from '../../components/Footer';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
-import './styles.scss';
+// import './styles.scss';
+import { PageContainerStyle, ContactStyle } from './Home.styles';
 
 export default function Home() {
     useEffect(() => {
@@ -18,17 +19,17 @@ export default function Home() {
 
     return (
         <div>
-            <div className="page_container">
+            <PageContainerStyle>
                 <Header />
-                <div className='contact'>
+                <ContactStyle>
                     <Contact />
-                </div>
+                </ContactStyle>
                 <About />
                 <ContactIcons />
                 <Projects />
                 <MainServices />
                 <Skill />
-            </div>
+            </PageContainerStyle>
             <div>
                 <Footer />
             </div>

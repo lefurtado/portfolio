@@ -1,9 +1,46 @@
-import './styles.scss';
+// import './styles.scss';
+import styled from 'styled-components';
+
+const AboutContainer = styled.div`
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+    margin-top: 50px;
+
+    & h2 {
+    color: ${({theme}) => theme.colors.white};
+    font-size: 25px;
+    font-weight: 700;
+    }
+
+    & p {
+    color: ${({theme}) => theme.colors.gray};
+    line-height: 20px;
+    font-size: 14px;
+    margin-top: 20px;
+    }
+
+    @media(min-width: 1280px){
+        max-width: 750px;
+        margin: auto;
+        margin-top: 120px;
+
+        & h2 {
+        font-size: 32px;
+        }
+
+        & p {
+        line-height: 30px;
+        font-size: 18px;
+        margin-top: 20px;
+        }
+    }
+`
 
 export default function About() {
     return (
         <div id='about' data-aos='fade-right'>
-            <div className="about-container flex">
+            <AboutContainer>
                 <div>
                     <h2>Sobre mim</h2>
                 </div>
@@ -59,7 +96,7 @@ export default function About() {
                     desenvolver minhas habilidades em programação.
                     </p> */}
                 </div>
-            </div>
+            </AboutContainer>
         </div>
     )
 }

@@ -7,13 +7,13 @@ export const NavbarStyled = styled.ul`
 
     & li a {
         text-decoration: none;
-        color: #fff;
+        color: ${({theme}) => theme.colors.white};
         transition: all 100ms;
         cursor: pointer;
     }
 
     & li a:hover {
-        color: #00DF5E;
+        color: ${({theme}) => theme.colors.greenLight};
         transition: all 100ms;
     }
 `

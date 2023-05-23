@@ -1,9 +1,21 @@
 import Typewriter from 'typewriter-effect';
-import './styles.scss';
+import styled from 'styled-components';
+
+const DeveloperStyle = styled.div`
+    font-size: 16px;
+    font-weight: 500;
+    color: ${({theme}) => theme.colors.gray};
+    text-align: center;
+
+    @media(min-width: 1280px) {
+        text-align: left;
+        font-size: 18px;
+    }
+`
 
 export default function Developer() {
     return(
-        <div className='developer'>
+        <DeveloperStyle>
             <Typewriter
                     options={{
                         strings: 'Desenvolvedor Front-End',
@@ -12,6 +24,6 @@ export default function Developer() {
                         delay: 'natural'
                     }}
                 />
-        </div>
+        </DeveloperStyle>
     )
 }
