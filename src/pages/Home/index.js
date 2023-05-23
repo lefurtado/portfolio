@@ -18,7 +18,7 @@ export default function Home() {
     }, []);
 
     return (
-        <div>
+        <>
             <PageContainerStyle>
                 <Header />
                 <ContactStyle>
@@ -30,9 +30,9 @@ export default function Home() {
                 <MainServices />
                 <Skill />
             </PageContainerStyle>
-            <div>
+            <>
                 <Footer />
-            </div>
-        </div>
+            </>
+        </>
     )
 }
