@@ -1,10 +1,61 @@
-import './styles.scss';
 import {
     FaWhatsapp,
     FaRegEnvelope,
     FaGithub,
     FaLinkedinIn
 } from 'react-icons/fa';
+import styled from 'styled-components';
+
+const MainContainerIconStyle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    & a {
+        text-decoration: none;
+    }
+
+    @media(min-width: 1280px) {
+        scale: 1.2;
+    }
+`
+
+const IconContainerStyle = styled.div`
+    display: flex;
+    margin-top: 40px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width: 140px;
+
+    & h2 {
+        font-size: 13px;
+        color: ${({theme}) => theme.colors.white};
+    }
+
+    & p {
+        font-size: 11px;
+        color: ${({theme}) => theme.colors.gray};
+    }
+
+    @media(min-width: 1280px) {
+        margin-top: 100px;
+    }
+`
+
+const CircleStyle = styled.div`
+    display: flex;
+    width: 46px;
+    height: 46px;
+    background-color: ${({theme}) => theme.colors.gray400};
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+`
+
+const IconStyle = styled.div`
+    color: ${({theme}) => theme.colors.greenLight};
+`
 
 export default function ContactIcons() {
     const iconComp = [
@@ -39,21 +90,20 @@ export default function ContactIcons() {
     ]
 
     return (
-        <div data-aos='fade-right' className='main-container-icon flex'>
-
+        <MainContainerIconStyle data-aos='fade-right'>
             {iconComp.map((icon) => (
-                <div key={icon.id} className='icon-container flex'>
+                <IconContainerStyle key={icon.id}>
                     <a href={icon.link} target='_blank' rel='noreferrer'>
-                        <div className="circle flex">
-                            <div className="icon">
+                        <CircleStyle>
+                            <IconStyle>
                                 {icon.icone}
-                            </div>
-                        </div>
+                            </IconStyle>
+                        </CircleStyle>
                     </a>
                     <h2>{icon.titulo}</h2>
                     <p>{icon.descricao}</p>
-                </div>
+                </IconContainerStyle>
             ))}
-        </div>
+        </MainContainerIconStyle>
     )
 }
