@@ -11,6 +11,10 @@ import Aos from 'aos'
 import 'aos/dist/aos.css';
 import styled from 'styled-components';
 
+const FontStyle = styled.div`
+    font-family: 'DM Sans', sans-serif;
+`
+
 const PageContainerStyle = styled.div`
     margin: 0 20px;
     @media(min-width: 1280px) {        
@@ -32,7 +36,7 @@ export default function Home() {
     }, []);
 
     return (
-        <>
+        <FontStyle>
             <PageContainerStyle>
                 <Header />
                 <ContactStyle>
@@ -47,6 +51,6 @@ export default function Home() {
             <>
                 <Footer />
             </>
-        </>
+        </FontStyle>
     )
 }
