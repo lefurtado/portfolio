@@ -11,22 +11,6 @@ import Aos from 'aos'
 import 'aos/dist/aos.css';
 import styled from 'styled-components';
 
-const ScrollableContainer = styled.div`
-    ::-webkit-scrollbar {
-            width: 0.5rem;
-        }
-
-    ::-webkit-scrollbar-track {
-            background-color: ${({theme}) => theme.colors.gray400};
-        }
-
-    ::-webkit-scrollbar-thumb {
-            background: ${({theme}) => theme.colors.white};
-            width: 0.5rem;
-            background-clip: content-box;
-        }
-`
-
 const PageContainerStyle = styled.div`
     margin: 0 20px;
     @media(min-width: 1280px) {        
@@ -48,7 +32,7 @@ export default function Home() {
     }, []);
 
     return (
-        <ScrollableContainer>
+        <>
             <PageContainerStyle>
                 <Header />
                 <ContactStyle>
@@ -63,6 +47,6 @@ export default function Home() {
             <>
                 <Footer />
             </>
-        </ScrollableContainer>
+        </>
     )
 }
