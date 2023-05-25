@@ -37,8 +37,8 @@ export default function Home() {
 
     return (
         <FontStyle>
+            <Header />
             <PageContainerStyle>
-                <Header />
                 <ContactStyle>
                     <Contact />
                 </ContactStyle>
