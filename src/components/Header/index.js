@@ -3,19 +3,28 @@ import Navbar from './Navbar';
 // import './styles.scss';
 import styled from 'styled-components';
 
-const HeaderStyle = styled.div`
+const HeaderContainerStyle = styled.div`
     display: flex;
-    margin-top: 24px;
     justify-content: space-between;
 
     @media(min-width: 1280px) {
-        background-color: ${({theme}) => theme.colors.dark};
-        align-items: center;
-        margin: auto;
         height: 100px;
         position: sticky;
         top: 0;
         z-index: 6;
+        background-color: ${({ theme }) => theme.colors.dark};
+    }
+`
+
+const HeaderStyle = styled.div`
+    display: flex;
+    margin: 24px auto;
+    width: 90%;
+    justify-content: space-between;
+
+    @media(min-width: 1280px) {
+        width: 1110px;
+        margin: auto;
     }
 `
 
@@ -23,7 +32,7 @@ const PortfolioStyle = styled.div`
     font-family: 'DM Sans', sans-serif;
     font-weight: 700;
     font-size: 14px;
-    color: ${({theme}) => theme.colors.white};
+    color: ${({ theme }) => theme.colors.white};
 
     @media(min-width: 1280px) {
         font-size: 26px;
@@ -46,16 +55,18 @@ const NavbarMenuStyle = styled.div`
 
 export default function Header() {
     return (
-        <HeaderStyle>
-            <PortfolioStyle>
-                Portfólio
-            </PortfolioStyle>
-            <HamburgerMenuStyle>
-                <Hamburger />
-            </HamburgerMenuStyle>
-            <NavbarMenuStyle>
-                <Navbar />
-            </NavbarMenuStyle>
-        </HeaderStyle>
+        <HeaderContainerStyle>
+            <HeaderStyle>
+                <PortfolioStyle>
+                    Portfólio
+                </PortfolioStyle>
+                <HamburgerMenuStyle>
+                    <Hamburger />
+                </HamburgerMenuStyle>
+                <NavbarMenuStyle>
+                    <Navbar />
+                </NavbarMenuStyle>
+            </HeaderStyle>
+        </HeaderContainerStyle>
     )
 }
