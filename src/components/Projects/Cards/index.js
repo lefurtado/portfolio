@@ -115,7 +115,7 @@ const LinkStyle = styled.div`
 
 export default function Cards() {
     const [openModal, setOpenModal] = useState(false);
-    const [itens, setItens] = useState([
+    const itens = [
         {
             id: 1,
             nome: 'Vison Motel',
@@ -159,7 +159,7 @@ export default function Cards() {
             tecnologias: 'React, HTML, CSS e Javascript',
             thumb: secretWord
         }
-    ]);
+    ];
 
     const [itemSelecionado, setItemSelecionado] = useState(null);
 

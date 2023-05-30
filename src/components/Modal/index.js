@@ -10,10 +10,11 @@ const ModalContainerStyle = styled.div`
     height: 500px;
     background-color: ${({theme}) => theme.colors.gray400};
     transform: translate(-50%, -50%);
+    z-index: 1000;
 `
 
 const ContainerVideoStyle = styled.div`
-display: flex;
+    display: flex;
     color: ${({theme}) => theme.colors.white};
     padding: 20px;
     gap: 1.5rem;
@@ -65,7 +66,7 @@ export default function Modal({ isOpen, setModalOpen, titulo, video, descricao, 
 
     if (isOpen) {
         return (
-            <>
+            <div>
                 <ModalContainerStyle>
                     <ContainerVideoStyle>
                         <div>
@@ -95,7 +96,7 @@ export default function Modal({ isOpen, setModalOpen, titulo, video, descricao, 
                         </BtnStyle>
                     </LinkStyle>
                 </ModalContainerStyle>
-            </>
+            </div>
         )
     }
 }

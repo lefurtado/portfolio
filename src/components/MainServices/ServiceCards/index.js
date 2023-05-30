@@ -3,7 +3,7 @@ import { DiReact } from "react-icons/di";
 import styled from 'styled-components';
 
 const ServiceCardSectionStyle = styled.div`
-font-family: 'DM Sans', sans-serif;
+    font-family: 'DM Sans', sans-serif;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
