@@ -13,6 +13,7 @@ const ModalContainerStyle = styled.div`
 `
 
 const ContainerVideoStyle = styled.div`
+display: flex;
     color: ${({theme}) => theme.colors.white};
     padding: 20px;
     gap: 1.5rem;
@@ -20,6 +21,11 @@ const ContainerVideoStyle = styled.div`
 
 const TitleContainerStyle = styled.div`
     margin-top: 20px;
+
+    & h2 {
+        font-size: 28px;
+        font-weight: 700;
+    }
 `
 
 const CloseBtnStyle = styled.div`
@@ -63,7 +69,7 @@ export default function Modal({ isOpen, setModalOpen, titulo, video, descricao, 
                 <ModalContainerStyle>
                     <ContainerVideoStyle>
                         <div>
-                            <iframe title='projeto' src={video} width="660" height="403" allow="autoplay"></iframe>
+                            <iframe title='projeto' src={video} width="600" height="403" allow="autoplay"></iframe>
                         </div>
                         <div>
                             <TitleContainerStyle>

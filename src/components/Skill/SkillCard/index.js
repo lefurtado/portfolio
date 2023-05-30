@@ -9,7 +9,39 @@ import {
     DiMysql
 } from "react-icons/di";
 import { SiTypescript } from "react-icons/si";
-import './styles.scss';
+import styled from "styled-components";
+
+const SkillCardSectionStyle = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 21px;
+    margin-top: 32px;
+`
+
+const SkillCardContainerStyle = styled.div`
+    display: flex;
+    background-color: ${({theme}) => theme.colors.gray400};
+    min-width: 90px;
+    min-height: 90px;
+    border: 1px solid ${({theme}) => theme.colors.gray200};
+    justify-content: center;
+    align-items: center;
+
+    @media(min-width: 1280px) {
+        width: 150px;
+        height: 150px;
+    }
+`
+
+const SkillIconStyle = styled.div`
+    color: ${({theme}) => theme.colors.greenLight};
+
+    @media(min-width: 1280px) {
+        scale: 1.5;
+    }
+`
 
 export default function SkillCard() {
     const skills = [
@@ -52,14 +84,14 @@ export default function SkillCard() {
     ]
 
     return (
-        <div className="skill_card_section flex">
+        <SkillCardSectionStyle>
             {skills.map(skill => (
-                <div key={skill.id} className='skill_card_container flex'>
-                    <div className="skill_icon">
+                <SkillCardContainerStyle key={skill.id}>
+                    <SkillIconStyle>
                         {skill.icone}
-                    </div>
-                </div>
+                    </SkillIconStyle>
+                </SkillCardContainerStyle>
             ))}
-        </div>
+        </SkillCardSectionStyle>
     )
 }

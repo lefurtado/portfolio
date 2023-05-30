@@ -1,6 +1,60 @@
 import { BsCodeSlash, BsPhone } from 'react-icons/bs';
 import { DiReact } from "react-icons/di";
-import './styles.scss';
+import styled from 'styled-components';
+
+const ServiceCardSectionStyle = styled.div`
+font-family: 'DM Sans', sans-serif;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    margin-top: 40px;
+`
+
+const CardContainerStyle = styled.div`
+    display: flex;
+    background-color: ${({theme}) => theme.colors.gray400};
+    min-width: 312px;
+    min-height: 140px;
+    border-bottom: 3px solid ${({theme}) => theme.colors.greenLight};
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 20px;
+
+    @media (min-width: 1280px) {
+        width: 340px;
+        height: 230px;
+        align-items: baseline;
+        gap: 50px;
+    }
+`
+
+const CardIconStyle = styled.div`
+    display: flex;
+    color: ${({theme}) => theme.colors.greenLight};
+
+    @media (min-width: 1280px) {
+        scale: 1.5;
+        margin-left: 30px;
+    }
+`
+
+const CardTitleStyle = styled.div`
+
+    & p {
+        color: ${({theme}) => theme.colors.gray};
+        font-size: 14px;
+    }
+
+    @media (min-width: 1280px) {
+        & p {
+            width: 120px;
+            font-size: 32px;
+        }
+    }
+`
 
 export default function ServiceCards() {
     const services = [
@@ -22,17 +76,17 @@ export default function ServiceCards() {
     ]
 
     return (
-        <div className='service_card_section flex'>
+        <ServiceCardSectionStyle>
             {services.map(service => (
-                <div key={service.id} className='service_card_container flex'>
-                    <div className='service_card_icon flex'>
+                <CardContainerStyle key={service.id}>
+                    <CardIconStyle>
                         {service.icone}
-                    </div>
-                    <div className="title_card_container">
+                    </CardIconStyle>
+                    <CardTitleStyle>
                         <p>{service.descricao}</p>
-                    </div>
-                </div>
+                    </CardTitleStyle>
+                </CardContainerStyle>
             ))}
-        </div>
+        </ServiceCardSectionStyle>
     )
 }
