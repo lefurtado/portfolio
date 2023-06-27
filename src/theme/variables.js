@@ -1,10 +1,10 @@
 export const variables = {
     colors: {
         greenLight: '#00DF5E',
-        white: '#F9F9F9',
+        white: '#060609',
         gray: '#828282',
         gray200: '#333333',
-        gray400: '#212121',
-        dark: '#171717',
+        gray400: '#1d2a45',
+        dark: '#f6f6f0',
     }
 }
