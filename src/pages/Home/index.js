@@ -10,18 +10,19 @@ import Footer from '../../components/Footer';
 import Aos from 'aos'
 import 'aos/dist/aos.css';
 import styled from 'styled-components';
+import Main from '../../components/MainSection';
 
 const FontStyle = styled.div`
     font-family: 'DM Sans', sans-serif;
 `
 
-const PageContainerStyle = styled.div`
-    margin: 0 20px;
-    @media(min-width: 1280px) {        
-            max-width: 1110px;
-            margin: auto;
-        }
-`
+// const PageContainerStyle = styled.div`
+//     margin: 0 20px;
+//     @media(min-width: 1280px) {        
+//             width: 1110px;
+//             margin: auto;
+//         }
+// `
 
 const ContactStyle = styled.div`
     margin-top: 56px;
@@ -37,17 +38,18 @@ export default function Home() {
 
     return (
         <FontStyle>
-            <Header />
-            <PageContainerStyle>
-                <ContactStyle>
+            {/* <Header /> */}
+            {/* <PageContainerStyle> */}
+                <Main />
+                {/* <ContactStyle>
                     <Contact />
-                </ContactStyle>
+                </ContactStyle> */}
                 <About />
-                <ContactIcons />
+                {/* <ContactIcons /> */}
                 <Projects />
                 <MainServices />
                 <Skill />
-            </PageContainerStyle>
+            {/* </PageContainerStyle> */}
             <>
                 <Footer />
             </>
