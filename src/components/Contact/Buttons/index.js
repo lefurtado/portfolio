@@ -52,7 +52,7 @@ export default function Buttons() {
         <div>
             <ButtonContainer>
                 <div data-aos='fade-right'>
-                    <a href="https://drive.google.com/file/d/1cDrbiVtDp-wPasUcpqlx113ouDAjcJja/view?usp=sharing" target='_blank' rel='noreferrer'>
+                    <a href="https://drive.google.com/file/d/1H4_-gsFfG7UjBR3oep_Xob19Ytt8H0ai/view?usp=drive_link" target='_blank' rel='noreferrer'>
                         <Button primary><AiOutlineCloudDownload size={25}/>Currículo</Button>
                     </a>
                 </div>
