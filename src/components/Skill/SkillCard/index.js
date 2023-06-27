@@ -8,6 +8,7 @@ import {
     DiNodejsSmall,
     DiMysql
 } from "react-icons/di";
+import { SiStyledcomponents } from "react-icons/si";
 import { SiTypescript } from "react-icons/si";
 import styled from "styled-components";
 
@@ -60,6 +61,10 @@ export default function SkillCard() {
         {
             id: 4,
             icone: <DiReact size={55} />
+        },
+        {
+            id: 10,
+            icone: <SiStyledcomponents size={55} />
         },
         {
             id: 5,
