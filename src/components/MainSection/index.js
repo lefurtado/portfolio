@@ -2,9 +2,7 @@ import {
     FaFileAlt,
     FaGithub,
     FaLinkedin,
-    FaCaretDown,
-    FaChevronDown,
-    FaGasPump
+    FaChevronDown
 } from 'react-icons/fa';
 import styled, { keyframes } from "styled-components";
 import Typewriter from 'typewriter-effect';
