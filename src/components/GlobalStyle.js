@@ -3,6 +3,9 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
     body {
+        & h2 {
+            text-transform: uppercase;
+        }
         background-color: ${({theme}) => theme.colors.dark};
 
         ::-webkit-scrollbar {
