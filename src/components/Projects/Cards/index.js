@@ -1,26 +1,21 @@
 import styled from 'styled-components';
-import mockupPortfolio from '../../../assets/images/mockup_portfolio.png';
-import mockupFoodJp from '../../../assets/images/food-jp-portfolio.png';
-import mockupVisonMotel from '../../../assets/images/vison-motel-portfolio.png';
+import mockupFoodJp from '../../../assets/images/mockup1.png';
+import mockupVisonMotel from '../../../assets/images/mockup2.png';
 
 const projetos = [
     {
         id: 1,
-        imagem: mockupPortfolio,
-        descricao: '',
-        link: ''
+        imagem: mockupFoodJp,
+        titulo: 'FoodJP Restaurante Japonês',
+        tecnologias: 'React e Styled Components',
+        link: 'https://food-jp-gamma.vercel.app/'
     },
     {
         id: 2,
-        imagem: mockupFoodJp,
-        descricao: '',
-        link: ''
-    },
-    {
-        id: 3,
         imagem: mockupVisonMotel,
-        descricao: '',
-        link: ''
+        titulo: 'Vison Motel',
+        tecnologias: 'HTML, CSS, Javascript e Bootstrap',
+        link: 'https://visonmotel.vercel.app/'
     }
 ]
 
@@ -37,7 +32,7 @@ const CardContainer = styled.div`
         flex-wrap: wrap;
         gap: 55px;
         max-width: 1300px;
-        margin: 100px auto;
+        margin: 50px auto;
     }
 `;
 
@@ -45,6 +40,11 @@ const ImageContainer = styled.div`
 
     & img {
         width: 300px;
+        transition: ease 1s all;
+
+        :hover {
+            scale: 1.02;
+        }
 
         @media(min-width: 1280px) {
             width: 600px;
@@ -52,21 +52,30 @@ const ImageContainer = styled.div`
     }
 `;
 
+const DescricaoProjeto = styled.div`
+    text-align: center;
+    line-height: 200%;
+
+    & h2 {
+        font-size: 28px;
+        font-weight: bold;
+    }
+`;
+
 export default function Cards() {
     return (
         <CardContainer>
-            <ImageContainer>
-                <img src={mockupVisonMotel} alt="" />
-            </ImageContainer>
-            <ImageContainer>
-                <img src={mockupFoodJp} alt="" />
-            </ImageContainer>
-            <ImageContainer>
-                <img src={mockupPortfolio} alt="" />
-            </ImageContainer>
-            <ImageContainer>
-                <img src={mockupPortfolio} alt="" />
-            </ImageContainer>
+            {projetos.map((projeto) => (
+                <ImageContainer key={projeto.id}>
+                    <a href={projeto.link} target='_blank' rel='noreferrer'>
+                        <img src={projeto.imagem} alt="" />
+                    </a>
+                    <DescricaoProjeto>
+                        <h2>{projeto.titulo}</h2>
+                        <p>{projeto.tecnologias}</p>
+                    </DescricaoProjeto>
+                </ImageContainer>
+            ))}
         </CardContainer>
     )
 }
