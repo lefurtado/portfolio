@@ -12,7 +12,7 @@ const FooterStyles = styled.div`
     & p {
     font-size: 12px;
     text-align: center;
-    color: ${({theme}) => theme.colors.white};
+    color: #BFD7EA;
     }
 
     & span {
@@ -32,7 +32,7 @@ const FooterStyles = styled.div`
 export default function Footer() {
     return (
         <FooterStyles>
-            <p>Orgulhosamente feito por <span>Leandro Furtado</span></p>
+            <p>Feito com &#128154; por <span>Leandro Furtado</span></p>
         </FooterStyles>
     )
 }
