@@ -26,7 +26,6 @@ const SkillCardContainerStyle = styled.div`
     background-color: ${({theme}) => theme.colors.gray400};
     min-width: 90px;
     min-height: 90px;
-    border: 1px solid ${({theme}) => theme.colors.gray200};
     justify-content: center;
     align-items: center;
 
