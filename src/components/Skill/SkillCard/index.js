@@ -16,9 +16,9 @@ const SkillCardSectionStyle = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
     gap: 21px;
-    margin-top: 32px;
+    margin: 32px auto;
+    width: 840px;
 `
 
 const SkillCardContainerStyle = styled.div`
