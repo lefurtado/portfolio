@@ -4,13 +4,13 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
     flex-direction: column;
     gap: 20px;
-    text-align: center;
     margin-top: 50px;
 
     & h2 {
     color: ${({theme}) => theme.colors.white};
     font-size: 25px;
     font-weight: 700;
+    text-align: center;
     }
 
     & p {
