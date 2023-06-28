@@ -14,7 +14,7 @@ const ProjectStyle = styled.div`
     @media(min-width: 1280px) {
         & h2 {
             font-size: 32px;
-            margin-top: 120px;
+            margin-top: 100px;
         }
     }
 `
