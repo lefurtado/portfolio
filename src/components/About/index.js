@@ -4,7 +4,7 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
     flex-direction: column;
     gap: 20px;
-    width: 350px;
+    width: 300px;
     margin: 50px auto 0;
 
     @media(min-width: 1280px) {
@@ -23,7 +23,7 @@ const AboutContainer = styled.div`
     line-height: 20px;
     font-size: 20px;
     margin-top: 20px;
-    text-align: justify;
+    text-align: center;
     }
 
     @media(min-width: 1280px){

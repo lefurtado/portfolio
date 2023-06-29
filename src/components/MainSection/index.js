@@ -109,11 +109,12 @@ const FuncaoStyle = styled.div`
 const DescricaoStyle = styled.div`
     width: 700px;
     color: #75A7D0;
-    font-size: 20px;
+    font-size: 14px;
     text-align: center;
 
     @media(min-width: 1280px) {
         text-align: right;
+        font-size: 20px;
     }
 `;
 
