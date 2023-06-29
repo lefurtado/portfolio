@@ -50,7 +50,13 @@ const Seta = styled.div`
     position: absolute;
     left: 48%;
     right: 50%;
-    bottom: 5%;
+    bottom: 0;
+
+    @media(min-width: 1280px) {
+        left: 48%;
+        right: 50%;
+        bottom: 5%;
+    }
 `;
 
 const BackgroundStyle = styled.div`
