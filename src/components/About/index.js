@@ -4,7 +4,12 @@ import styled from 'styled-components';
 const AboutContainer = styled.div`
     flex-direction: column;
     gap: 20px;
-    margin-top: 50px;
+    width: 350px;
+    margin: 50px auto 0;
+
+    @media(min-width: 1280px) {
+        width: auto;
+    }
 
     & h2 {
     color: ${({theme}) => theme.colors.white};
@@ -16,8 +21,9 @@ const AboutContainer = styled.div`
     & p {
     color: ${({theme}) => theme.colors.gray};
     line-height: 20px;
-    font-size: 14px;
+    font-size: 20px;
     margin-top: 20px;
+    text-align: justify;
     }
 
     @media(min-width: 1280px){
@@ -62,7 +68,6 @@ export default function About() {
                         Atualmente cursando tecnologia em Análise e Desenvolvimento de Sistemas
                         na faculdade Cruzeiro do Sul. */}
                     </p>
-                    <br />
                     <p>
                         Estou entusiasmado em fazer parte de uma equipe de desenvolvimento
                         e contribuir para o sucesso do projeto.

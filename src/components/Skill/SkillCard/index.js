@@ -18,7 +18,7 @@ const SkillCardSectionStyle = styled.div`
     justify-content: center;
     gap: 21px;
     margin: 32px auto;
-    width: 840px;
+    max-width: 840px;
 `
 
 const SkillCardContainerStyle = styled.div`

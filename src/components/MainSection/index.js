@@ -62,27 +62,47 @@ const BackgroundStyle = styled.div`
 `;
 
 const ContainerStyle = styled.div`
-    max-width: 1120px;
+    max-width: 350px;
     margin: auto;
+
+    @media(min-width: 1280px) {
+        max-width: 1120px;
+        margin: auto;
+    }
 `;
 
 const NomeStyle = styled.div`
     color: #75A7D0;
-    font-size: 32px;
+    font-size: 28px;
     font-weight: bold;
     margin-bottom: 30px;
+    text-align: center;
+
+    @media(min-width: 1280px) {
+        font-size: 32px;
+        text-align: start;
+    }
 `;
 
 const FuncaoStyle = styled.div`
-    display: inline-flex;
+    display: flex;
+    flex-direction: column;
     align-items: center;
     flex-wrap: wrap;
+
+    @media(min-width: 1280px) {
+        flex-direction: row;
+    }
+
     & span {
-        font-size: 200px;
         font-family: 'Poppins', sans-serif;
         line-height: 150px;
         color: #BFD7EA;
         pointer-events: none;
+        font-size: 52px;
+            @media(min-width: 1280px) {
+                font-size: 200px;
+            }
     }
 `;
 
@@ -90,13 +110,20 @@ const DescricaoStyle = styled.div`
     width: 700px;
     color: #75A7D0;
     font-size: 20px;
-    text-align: right;
+    text-align: center;
+
+    @media(min-width: 1280px) {
+        text-align: right;
+    }
 `;
 
 const FlexStyle = styled.div`
     display: flex;
     justify-content: end;
-    margin-top: 30px;
+    
+    @media(min-width: 1280px) {
+        margin-top: 30px;
+    }
 `;
 
 const ContatoStyle = styled.div`

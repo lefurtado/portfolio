@@ -23,7 +23,7 @@ const CardContainer = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 100px;
+    margin: 50px auto;
     gap: 55px;
 
     @media(min-width: 1280px) {
@@ -37,6 +37,9 @@ const CardContainer = styled.div`
 `;
 
 const ImageContainer = styled.div`
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 
     & img {
         width: 300px;
