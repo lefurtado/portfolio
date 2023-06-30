@@ -48,7 +48,7 @@ const Seta = styled.div`
     cursor: pointer;
     animation: ${moveAnimation1} 2s infinite;
     position: absolute;
-    left: 48%;
+    left: 46%;
     right: 50%;
     bottom: 0;
 
