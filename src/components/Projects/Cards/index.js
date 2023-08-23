@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 import mockupFoodJp from '../../../assets/images/mockup1.png';
 import mockupVisonMotel from '../../../assets/images/mockup2.png';
+import xbox from '../../../assets/images/xbox.png';
 
 const projetos = [
     {
@@ -16,6 +17,13 @@ const projetos = [
         titulo: 'Vison Motel',
         tecnologias: 'HTML, CSS, Javascript e Bootstrap',
         link: 'https://visonmotel.vercel.app/'
+    },
+    {
+        id: 3,
+        imagem: xbox,
+        titulo: 'Xbox Series X',
+        tecnologias: 'React e Styled Components',
+        link: 'https://xbox-khaki.vercel.app'
     }
 ]
 
@@ -30,9 +38,7 @@ const CardContainer = styled.div`
         flex-direction: row;
         justify-content: space-between;
         flex-wrap: wrap;
-        gap: 55px;
         max-width: 1300px;
-        margin: 50px auto;
     }
 `;
 
