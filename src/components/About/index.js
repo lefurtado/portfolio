@@ -52,12 +52,12 @@ export default function About() {
                 </div>
                 <div>
                     <p>
-                        Olá! Meu nome é Leandro Furtado, trabalhei como Desenvolvedor frontend em
+                        Olá! Meu nome é Leandro Furtado, trabalho como Desenvolvedor frontend em
                         uma empresa de software focada no
-                        desenvolvimento de sistemas educacionais.
-                        Atualmente, tenho feito trabalhos freelancers
-                        nos últimos 9 meses. Especializado em React,
-                        Javascript (ES6), HTML, Styled Components,
+                        desenvolvimento de sistemas de pagamentos.
+                        Atualmente, também tenho feito trabalhos freelancers.
+                        Especializado em React,
+                        Javascript (ES6), Next.JS, Styled Components,
                         Bootstrap e NodeJS. Habilidades sólidas em
                         criação de interfaces responsivas e funcionais,
                         buscando constantemente atualização e

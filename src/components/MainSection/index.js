@@ -175,7 +175,7 @@ export default function Main() {
                         <ContatoStyle data-aos='fade-down'>
                             <a href="https://github.com/lefurtado"  target='_blank' rel='noreferrer'><Icone1 size={60} /></a>
                             <a href="https://www.linkedin.com/in/le-furtado/" target='_blank' rel='noreferrer'><Icone2 size={60} /></a>
-                            <a href="https://drive.google.com/file/d/1H4_-gsFfG7UjBR3oep_Xob19Ytt8H0ai/view?usp=drive_link" target='_blank' rel='noreferrer'><Icone3 size={60} /></a>
+                            <a href="https://drive.google.com/file/d/1PGzd72dZLC5sw0e6oLwrAzPLaGpfl7bY/view?usp=drive_link" target='_blank' rel='noreferrer'><Icone3 size={60} /></a>
                         </ContatoStyle>
                     <span>DEVELOPER</span>
                 </FuncaoStyle>
