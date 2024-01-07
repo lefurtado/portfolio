@@ -1,5 +1,4 @@
 import SkillCard from './SkillCard';
-import './styles.scss';
 import styled from 'styled-components';
 
 const SkillStyle = styled.div`

@@ -1,5 +1,4 @@
 import ServiceCards from './ServiceCards';
-import './styles.scss';
 import styled from 'styled-components';
 
 const ServicesStyle = styled.div`

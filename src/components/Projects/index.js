@@ -1,5 +1,4 @@
 import Cards from './Cards';
-import './styles.scss';
 import styled from 'styled-components';
 
 const ProjectStyle = styled.div`
