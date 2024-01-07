@@ -22,6 +22,7 @@ const CardContainerStyle = styled.div`
     align-items: center;
     flex-direction: column;
     gap: 20px;
+    border-radius: 5px;
 
     @media (min-width: 1280px) {
         width: 340px;

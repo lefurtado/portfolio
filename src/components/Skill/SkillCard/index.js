@@ -28,6 +28,7 @@ const SkillCardContainerStyle = styled.div`
     min-height: 90px;
     justify-content: center;
     align-items: center;
+    border-radius: 5px;
 
     @media(min-width: 1280px) {
         width: 150px;
