@@ -1,31 +1,5 @@
 import styled from 'styled-components';
-import mockupFoodJp from '../../../assets/images/mockup1.png';
-import mockupVisonMotel from '../../../assets/images/mockup2.png';
-import xbox from '../../../assets/images/xbox.png';
-
-const projetos = [
-    {
-        id: 1,
-        imagem: mockupFoodJp,
-        titulo: 'FoodJP Restaurante Japonês',
-        tecnologias: 'React e Styled Components',
-        link: 'https://food-jp-gamma.vercel.app/'
-    },
-    {
-        id: 2,
-        imagem: mockupVisonMotel,
-        titulo: 'Vison Motel',
-        tecnologias: 'HTML, CSS, Javascript e Bootstrap',
-        link: 'https://visonmotel.vercel.app/'
-    },
-    {
-        id: 3,
-        imagem: xbox,
-        titulo: 'Xbox Series X',
-        tecnologias: 'React e Styled Components',
-        link: 'https://xbox-khaki.vercel.app'
-    }
-]
+import { projects } from '../../../data/projects';
 
 const CardContainer = styled.div`
     display: flex;
@@ -74,14 +48,14 @@ const DescricaoProjeto = styled.div`
 export default function Cards() {
     return (
         <CardContainer>
-            {projetos.map((projeto) => (
-                <ImageContainer key={projeto.id}>
-                    <a href={projeto.link} target='_blank' rel='noreferrer'>
-                        <img src={projeto.imagem} alt="" />
+            {projects.map((project) => (
+                <ImageContainer key={project.id}>
+                    <a href={project.link} target='_blank' rel='noreferrer'>
+                        <img src={project.imagem} alt="" />
                     </a>
                     <DescricaoProjeto>
-                        <h2>{projeto.titulo}</h2>
-                        <p>{projeto.tecnologias}</p>
+                        <h2>{project.titulo}</h2>
+                        <p>{project.tecnologias}</p>
                     </DescricaoProjeto>
                 </ImageContainer>
             ))}
