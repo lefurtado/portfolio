@@ -10,9 +10,9 @@ const CardContainer = styled.div`
 
     @media(min-width: 1280px) {
         flex-direction: row;
-        justify-content: space-between;
+        justify-content: space-evenly;
         flex-wrap: wrap;
-        max-width: 1300px;
+        max-width: 1280px;
     }
 `;
 
