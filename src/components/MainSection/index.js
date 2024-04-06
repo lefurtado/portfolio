@@ -181,7 +181,7 @@ export default function Main() {
                 </FuncaoStyle>
                 <FlexStyle>
                     <DescricaoStyle data-aos='fade-right'>
-                        DESENVOLVEDOR FRONT-END COM 1 ANO DE EXPERIÊNCIA ENTRE TRABALHO FREELANCER E EMPRESA DE SOFTWARE
+                        DESENVOLVEDOR FRONT-END COM 2 ANOS DE EXPERIÊNCIA FREELANCER E EMPRESA DE DESENVOLVIMENTO DE SOFTWARE
                     </DescricaoStyle>
                 </FlexStyle>
                 <Seta className='list_item'>
