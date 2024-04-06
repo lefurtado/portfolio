@@ -2,6 +2,7 @@ import mockupFoodJp from '../assets/images/mockup1.png';
 import mockupVisonMotel from '../assets/images/mockup2.png';
 import xbox from '../assets/images/xbox.png';
 import memoria from '../assets/images/jogo-da-memoria.png';
+import protfolioBruna from '../assets/images/portfolio-bruna.png';
 
 export const projects = [
   {
@@ -31,5 +32,12 @@ export const projects = [
       titulo: 'Jogo da Memória',
       tecnologias: 'React, Vite e Tailwind',
       link: 'https://jogo-da-memoria-pink.vercel.app/'
+  },
+  {
+      id: 5,
+      imagem: protfolioBruna,
+      titulo: 'Landing Page Psicóloga',
+      tecnologias: 'HTML, CSS, Javascript',
+      link: 'https://brunabertoluci.vercel.app/'
   }
 ]
