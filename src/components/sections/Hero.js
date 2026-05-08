@@ -74,6 +74,7 @@ const Greet = styled.div`
 `;
 
 const Title = styled.h1`
+    font-family: ${({ theme }) => theme.font.display};
     font-size: clamp(48px, 9vw, 128px);
     font-weight: 700;
     letter-spacing: -0.04em;
