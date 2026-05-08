@@ -1,32 +1,27 @@
-import { useEffect } from 'react';
-import Aos from 'aos'
-import 'aos/dist/aos.css';
-import styled from 'styled-components';
-
-import About from '../../components/About';
-import Projects from '../../components/Projects';
-import MainServices from '../../components/MainServices';
-import Skill from '../../components/Skill';
-import Footer from '../../components/Footer';
-import Main from '../../components/MainSection';
-
-const FontStyle = styled.div`
-    font-family: 'DM Sans', sans-serif;
-`
+import { Navbar } from '../../components/layout/Navbar';
+import { Hero } from '../../components/sections/Hero';
+import { About } from '../../components/sections/About';
+import { Timeline } from '../../components/sections/Timeline';
+import { Projects } from '../../components/sections/Projects';
+import { Services } from '../../components/sections/Services';
+import { Skills } from '../../components/sections/Skills';
+import { Contact } from '../../components/sections/Contact';
+import { Footer } from '../../components/sections/Footer';
 
 export default function Home() {
-    useEffect(() => {
-        Aos.init({ duration: 1000 });
-    }, []);
-
     return (
-        <FontStyle>
-            <Main />
-            <About />
-            <Projects />
-            <MainServices />
-            <Skill />
+        <>
+            <Navbar />
+            <main>
+                <Hero />
+                <About />
+                <Timeline />
+                <Projects />
+                <Services />
+                <Skills />
+                <Contact />
+            </main>
             <Footer />
-        </FontStyle>
-    )
+        </>
+    );
 }

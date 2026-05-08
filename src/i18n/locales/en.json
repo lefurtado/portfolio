@@ -1,0 +1,164 @@
+{
+    "nav": {
+        "about": "About",
+        "projects": "Projects",
+        "skills": "Skills",
+        "experience": "Experience",
+        "contact": "Contact",
+        "cta": "Let's talk"
+    },
+    "hero": {
+        "status": "Available for projects",
+        "greeting": "Hi, I'm",
+        "name": "Leandro Furtado",
+        "roles": [
+            "Fullstack Developer",
+            "Node.js + React + .NET",
+            "Mobile with Flutter",
+            "Real-time integrations"
+        ],
+        "tagline": "I build fullstack apps that ship to production — robust REST APIs with Node.js and .NET, componentized React UIs, and Flutter mobile.",
+        "primary": "See projects",
+        "secondary": "Download CV",
+        "scroll": "Scroll down"
+    },
+    "about": {
+        "label": "About me",
+        "title": "Fullstack engineering from MVP to production",
+        "p1": "I'm Leandro Furtado, a fullstack developer with 3+ years of experience. I work on the backend with Node.js and .NET building robust REST APIs, and on the frontend with React crafting componentized, well-integrated UIs.",
+        "p2": "Hands-on with containerized environments (Docker), third-party API integrations and event-driven architectures — I shipped real-time payment confirmation via SignalR/WebSocket in a financial context. Currently a Founding Engineer (mobile) at PayPass, a fintech in production.",
+        "stats": {
+            "years": "Years of experience",
+            "projects": "Systems in production",
+            "clients": "Companies served"
+        }
+    },
+    "timeline": {
+        "label": "Journey",
+        "title": "Experience",
+        "items": [
+            {
+                "period": "11/2025 — Present",
+                "role": "Founding Engineer · Mobile Developer",
+                "company": "PayPass",
+                "description": "Leading the mobile layer of a fintech in production, from zero to deploy. Building .NET REST APIs with JWT, Pix payment flows with real-time confirmation via SignalR, FCM push and Open Finance integration (Pluggy). Stack: Flutter, .NET, Node.js, Supabase, Docker."
+            },
+            {
+                "period": "08/2025 — Present",
+                "role": "Full Stack Developer",
+                "company": "R3+ TopTech",
+                "description": "Developing and maintaining an educational system used by municipalities. React frontend with advanced componentization and React Hook Form; .NET backend with Dapper, Entity Framework and PostgreSQL."
+            },
+            {
+                "period": "05/2024 — 08/2025",
+                "role": "Front-end Developer",
+                "company": "R3+ TopTech",
+                "description": "Maintenance and evolution of features in the educational system, focused on UX, performance and componentization."
+            },
+            {
+                "period": "09/2023 — 05/2024",
+                "role": "Front-end Developer",
+                "company": "WT Negócios",
+                "description": "Payment systems with Next.js and TypeScript, focused on usability and responsiveness. REST API integration and collaboration with the backend team."
+            },
+            {
+                "period": "11/2022 — 01/2023",
+                "role": "Front-end Developer",
+                "company": "ZB Negócios",
+                "description": "React development with componentization, Redux state management and API integration."
+            }
+        ]
+    },
+    "projects": {
+        "label": "Selected work",
+        "title": "Projects",
+        "all": "All",
+        "view": "View project",
+        "details": "View details",
+        "about": "About the project",
+        "stackLabel": "Tech stack",
+        "visitSite": "Visit website",
+        "badges": {
+            "publico": "Public",
+            "interno": "Internal",
+            "empresa": "Company / Confidential",
+            "em_dev": "In development"
+        },
+        "items": {
+            "paypass": {
+                "name": "PayPass",
+                "tagline": "Your money, on your time.",
+                "descriptionShort": "Production fintech: Flutter mobile app with advances, Pix, credit score and Open Finance — .NET backend, PostgreSQL data and Firebase services.",
+                "descriptionLong": "PayPass is a production fintech focused on receivables advances and personal finance. I work as Founding Engineer on the mobile layer, from greenfield to app store release.\n\nThe Flutter app integrates Pix flows with real-time confirmation (SignalR), push via Firebase Cloud Messaging, JWT auth against .NET APIs and Open Finance integration (Pluggy). Critical persistence and reporting run on PostgreSQL.\n\nThe product has a public marketing site; source code and internal details stay confidential — what you see here is only what is appropriate to share on a portfolio."
+            },
+            "avaEducacao": {
+                "name": "AVA Educação",
+                "tagline": "Virtual learning platform for higher education institutions",
+                "descriptionShort": "Multi-tenant LMS (CREATOR + institution): programs, classes, content, grading, forums, polls and calendar — Vite + shadcn on the client; REST API with Node.js, Fastify, Prisma, Zod and Supabase (Auth, Postgres, Storage).",
+                "descriptionLong": "AVA Educação is a learning environment built for everyday academic work: course and class management, tools for instructors, student progress tracking, and communication channels such as forums, polls and an integrated calendar.\n\nOn the frontend I used React with Vite and TypeScript, UI with shadcn/ui and Supabase Auth integration. On the backend, a REST API in Node.js with Fastify: Prisma as ORM on PostgreSQL hosted on Supabase, Zod for request and env validation, JWT auth via Supabase, file storage on Supabase Storage, and interactive docs via Scalar/OpenAPI (`GET /docs`). The domain spans two tenant types — CREATOR (content producer: programs → disciplines → cohorts → enrollments) and INSTITUTION (semesters → classes → class disciplines → enrollments) — sharing content modules, assessment (stages, activities, exams, gradebook) and communication.\n\nThere is a reference deployment (frontend on Vercel, API on Render) and a public demo login; the product remains classified as company-confidential. Link to the login screen: ava-educacao.vercel.app."
+            },
+            "r3Educacao": {
+                "name": "R3+ TopTech · Education system",
+                "tagline": "Municipal education secretariat management (SEMED)",
+                "descriptionShort": "Municipal education platform: modules for the secretariat, school units, teaching staff, admin, pre-enrollment, staff selection and more — React, React Hook Form, .NET and PostgreSQL.",
+                "descriptionLong": "Web platform built at R3+ TopTech for municipal education management. The dashboard brings together many modules — e.g. SEMED settings, school units, teaching (planning and class diary), admin (assets, transport, food), pre-enrollment, staff selection, library, facial recognition and financial transfers.\n\nOn the frontend I worked with highly componentized React and React Hook Form. On the backend, APIs and services in .NET with Dapper, Entity Framework and PostgreSQL.\n\nConfidential company project: no public repo or demo; the mockup reflects the UI density and scope of the system."
+            },
+            "petshop": {
+                "name": "PetShop System",
+                "tagline": "Full petshop management in one place",
+                "descriptionShort": "SaaS platform for petshops: smart scheduling with a visual kanban, owner & pet records, and financial control with reports.",
+                "descriptionLong": "PetShop System is a SaaS platform designed for daily petshop operations. It unifies scheduling, owner and pet records, service flow and financial control into a single dashboard.\n\nPlanned features include: visual kanban for appointments, Google login, multi-tenant auth, revenue dashboards, recurring grooming bookings and automated owner notifications.\n\nThe goal is a clean, fast and responsive experience — UI built with shadcn/ui on Next.js, persistence via Supabase + Prisma, and end-to-end typing with TypeScript."
+            }
+        }
+    },
+    "services": {
+        "label": "What I do",
+        "title": "Services",
+        "items": [
+            {
+                "title": "Fullstack Development",
+                "description": "REST APIs in Node.js and .NET with JWT auth, plus componentized React and Next.js UIs — from design to deploy."
+            },
+            {
+                "title": "Integrations & Real-time",
+                "description": "Real-time confirmation via WebSocket/SignalR, third-party API integrations (Open Finance via Pluggy) and event-driven architectures."
+            },
+            {
+                "title": "Mobile Apps",
+                "description": "Flutter/Dart apps with FCM push notifications, Pix/EMV payment flows and integration with custom backends."
+            }
+        ]
+    },
+    "skills": {
+        "label": "My stack",
+        "title": "Skills",
+        "groups": {
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "mobile": "Mobile",
+            "realtime": "Real-time & Events",
+            "infra": "Infra & DevOps"
+        }
+    },
+    "testimonials": {
+        "label": "Testimonials",
+        "title": "What people say"
+    },
+    "contact": {
+        "label": "Contact",
+        "title": "Let's build something together",
+        "subtitle": "Got a project in mind? Drop me a message.",
+        "name": "Your name",
+        "email": "Your email",
+        "message": "Your message",
+        "send": "Send message",
+        "sending": "Sending...",
+        "success": "Message sent successfully!",
+        "error": "Error sending. Please try again."
+    },
+    "footer": {
+        "rights": "All rights reserved",
+        "made": "Made with",
+        "and": "and React"
+    }
+}

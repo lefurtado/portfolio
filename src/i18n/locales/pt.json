@@ -1,0 +1,164 @@
+{
+    "nav": {
+        "about": "Sobre",
+        "projects": "Projetos",
+        "skills": "Skills",
+        "experience": "Experiência",
+        "contact": "Contato",
+        "cta": "Vamos conversar"
+    },
+    "hero": {
+        "status": "Disponível para projetos",
+        "greeting": "Olá, eu sou",
+        "name": "Leandro Furtado",
+        "roles": [
+            "Desenvolvedor Fullstack",
+            "Node.js + React + .NET",
+            "Mobile com Flutter",
+            "Integrações em tempo real"
+        ],
+        "tagline": "Construo aplicações fullstack que vão de verdade para produção — APIs REST robustas em Node.js e .NET, interfaces componentizadas em React e mobile com Flutter.",
+        "primary": "Ver projetos",
+        "secondary": "Baixar CV",
+        "scroll": "Role para baixo"
+    },
+    "about": {
+        "label": "Sobre mim",
+        "title": "Engenharia fullstack do MVP à produção",
+        "p1": "Sou Leandro Furtado, desenvolvedor fullstack com mais de 3 anos de experiência. Atuo no backend com Node.js e .NET construindo APIs REST robustas, e no frontend com React desenvolvendo interfaces componentizadas e integradas.",
+        "p2": "Tenho vivência em ambientes containerizados com Docker, integração de sistemas via APIs e arquiteturas orientadas a eventos — implementei confirmação de pagamento em tempo real via SignalR/WebSocket em contexto financeiro. Atualmente sou Founding Engineer mobile na PayPass, fintech em produção.",
+        "stats": {
+            "years": "Anos de experiência",
+            "projects": "Sistemas em produção",
+            "clients": "Empresas atendidas"
+        }
+    },
+    "timeline": {
+        "label": "Trajetória",
+        "title": "Experiência",
+        "items": [
+            {
+                "period": "11/2025 — Presente",
+                "role": "Founding Engineer · Mobile Developer",
+                "company": "PayPass",
+                "description": "Lidero a camada mobile de uma fintech em produção, do zero ao deploy. Construo APIs REST em .NET com JWT, fluxos de Pix com confirmação em tempo real via SignalR, push via FCM e integração Open Finance (Pluggy). Stack: Flutter, .NET, Node.js, Supabase, Docker."
+            },
+            {
+                "period": "08/2025 — Presente",
+                "role": "Desenvolvedor Full Stack",
+                "company": "R3+ TopTech",
+                "description": "Desenvolvimento e manutenção de sistema educacional usado por municípios. Frontend em React com componentização avançada e React Hook Form; backend em .NET com Dapper, Entity Framework e PostgreSQL."
+            },
+            {
+                "period": "05/2024 — 08/2025",
+                "role": "Desenvolvedor Front-end",
+                "company": "R3+ TopTech",
+                "description": "Manutenção e evolução de features no sistema educacional com foco em UX, desempenho e componentização."
+            },
+            {
+                "period": "09/2023 — 05/2024",
+                "role": "Desenvolvedor Front-end",
+                "company": "WT Negócios",
+                "description": "Sistemas de pagamento com Next.js e TypeScript, foco em usabilidade e responsividade. Integração com APIs REST e colaboração com time de backend."
+            },
+            {
+                "period": "11/2022 — 01/2023",
+                "role": "Desenvolvedor Front-end",
+                "company": "ZB Negócios",
+                "description": "Desenvolvimento React com componentização, gerenciamento de estado via Redux e integração de APIs."
+            }
+        ]
+    },
+    "projects": {
+        "label": "Trabalhos selecionados",
+        "title": "Projetos",
+        "all": "Todos",
+        "view": "Ver projeto",
+        "details": "Ver detalhes",
+        "about": "Sobre o projeto",
+        "stackLabel": "Stack utilizada",
+        "visitSite": "Visitar site",
+        "badges": {
+            "publico": "Público",
+            "interno": "Interno",
+            "empresa": "Empresa / Confidencial",
+            "em_dev": "Em desenvolvimento"
+        },
+        "items": {
+            "paypass": {
+                "name": "PayPass",
+                "tagline": "Seu dinheiro, no seu tempo.",
+                "descriptionShort": "Fintech em produção: app mobile em Flutter com antecipação, Pix, score e Open Finance — backend .NET, dados em PostgreSQL e serviços Firebase.",
+                "descriptionLong": "PayPass é uma fintech em produção focada em antecipação de recebíveis e gestão financeira para o usuário final. Atuo como Founding Engineer na camada mobile, do zero ao deploy em lojas.\n\nO app Flutter integra fluxos de Pix com confirmação em tempo real (SignalR), push via Firebase Cloud Messaging, autenticação JWT com APIs .NET e integração Open Finance (Pluggy). A persistência e relatórios críticos rodam sobre PostgreSQL.\n\nO produto tem site institucional público; código e detalhes internos permanecem confidenciais — o que aparece aqui é só o que faz sentido divulgar no portfólio."
+            },
+            "avaEducacao": {
+                "name": "AVA Educação",
+                "tagline": "Plataforma de ensino virtual para instituições de ensino superior",
+                "descriptionShort": "AVA multi-tenant (CREATOR + instituição): programas, turmas, conteúdo, avaliação, fóruns, enquetes e calendário — Vite + shadcn no front; API REST em Node.js, Fastify, Prisma, Zod e Supabase (Auth, Postgres, Storage).",
+                "descriptionLong": "O AVA Educação é um ambiente virtual de aprendizagem pensado para o dia a dia acadêmico: gestão de disciplinas e turmas, ferramentas para professores, acompanhamento de progresso dos alunos e canais de comunicação como fóruns, enquetes e calendário integrado.\n\nNo frontend usei React com Vite e TypeScript, interface com shadcn/ui e integração com Supabase Auth. No backend, uma API REST em Node.js com Fastify: Prisma como ORM sobre PostgreSQL hospedado no Supabase, validação de entrada e variáveis de ambiente com Zod, autenticação via JWT do Supabase, armazenamento de arquivos no Supabase Storage e documentação interativa em Scalar/OpenAPI (`GET /docs`). O domínio cobre dois tipos de tenant — CREATOR (produtor de conteúdo: programas → disciplinas → turmas → matrículas) e INSTITUTION (semestres → turmas → disciplinas da turma → matrículas) — compartilhando módulos de conteúdo, avaliação (etapas, atividades, provas, boletim) e comunicação.\n\nHá deploy de referência (frontend na Vercel, API no Render) e login de demonstração público; o produto segue classificado como confidencial no âmbito empresarial. Link para a tela de login: ava-educacao.vercel.app."
+            },
+            "r3Educacao": {
+                "name": "R3+ TopTech · Sistema de Educação",
+                "tagline": "Gestão da Secretaria de Educação (SEMED)",
+                "descriptionShort": "Sistema educacional usado por municípios: módulos para secretaria, unidades escolares, docente, administrativo, pré-matrícula, processo seletivo e mais — React, React Hook Form, .NET e PostgreSQL.",
+                "descriptionLong": "Plataforma web desenvolvida na R3+ TopTech para gestão municipal da educação. O painel centraliza dezenas de módulos — por exemplo gestão SEMED, unidades escolares, docente (planejamento e diário de classe), administrativo (patrimônio, transporte, alimentação), pré-matrícula, processo seletivo de servidores, biblioteca, reconhecimento facial e financeiro de repasses.\n\nNo frontend trabalhei com React em componentização avançada e formulários com React Hook Form. No backend, APIs e serviços em .NET com Dapper, Entity Framework e PostgreSQL.\n\nProjeto confidencial da empresa: sem repositório ou ambiente público; o mockup ilustra a linha visual e a densidade funcional do sistema."
+            },
+            "petshop": {
+                "name": "PetShop System",
+                "tagline": "Gestão completa do seu petshop em um só lugar",
+                "descriptionShort": "Plataforma SaaS para petshops: agendamentos inteligentes com kanban visual, cadastro de tutores e pets, e controle financeiro com relatórios.",
+                "descriptionLong": "PetShop System é uma plataforma SaaS pensada para a operação de petshops do dia a dia. O sistema unifica agendamentos, cadastro de tutores e pets, fluxo de atendimentos e controle financeiro em um único painel.\n\nEntre as funcionalidades planejadas estão: kanban visual de agendamentos, login com Google, autenticação multi-tenant, dashboards de receita, recorrência de banhos/tosas e notificações automáticas para tutores.\n\nO foco é entregar uma experiência limpa, rápida e responsiva — com UI baseada em shadcn/ui sobre Next.js, persistência via Supabase + Prisma, e tipagem ponta-a-ponta com TypeScript."
+            }
+        }
+    },
+    "services": {
+        "label": "O que eu faço",
+        "title": "Serviços",
+        "items": [
+            {
+                "title": "Desenvolvimento Fullstack",
+                "description": "APIs REST em Node.js e .NET com autenticação JWT, e interfaces componentizadas em React e Next.js — do design ao deploy."
+            },
+            {
+                "title": "Integrações & Tempo Real",
+                "description": "Confirmação em tempo real via WebSocket/SignalR, integração com APIs externas (Open Finance via Pluggy) e arquiteturas orientadas a eventos."
+            },
+            {
+                "title": "Apps Mobile",
+                "description": "Aplicativos em Flutter/Dart com push notifications via FCM, fluxos de Pix/EMV e integração com backends próprios."
+            }
+        ]
+    },
+    "skills": {
+        "label": "Minha stack",
+        "title": "Skills",
+        "groups": {
+            "frontend": "Front-end",
+            "backend": "Back-end",
+            "mobile": "Mobile",
+            "realtime": "Tempo Real & Eventos",
+            "infra": "Infra & DevOps"
+        }
+    },
+    "testimonials": {
+        "label": "Depoimentos",
+        "title": "O que dizem"
+    },
+    "contact": {
+        "label": "Contato",
+        "title": "Vamos construir algo juntos",
+        "subtitle": "Tem um projeto em mente? Me mande uma mensagem.",
+        "name": "Seu nome",
+        "email": "Seu email",
+        "message": "Sua mensagem",
+        "send": "Enviar mensagem",
+        "sending": "Enviando...",
+        "success": "Mensagem enviada com sucesso!",
+        "error": "Erro ao enviar. Tente novamente."
+    },
+    "footer": {
+        "rights": "Todos os direitos reservados",
+        "made": "Feito com",
+        "and": "e React"
+    }
+}
