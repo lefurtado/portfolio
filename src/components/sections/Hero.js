@@ -205,7 +205,7 @@ export function Hero() {
                     </Button>
                     <ButtonLink
                         $variant="ghost"
-                        href="https://drive.google.com/file/d/1PGzd72dZLC5sw0e6oLwrAzPLaGpfl7bY/view?usp=drive_link"
+                        href="https://drive.google.com/file/d/1IkVAmvTuqCFW8jf5HjBCJPhumUV1LfK9/view?usp=sharing"
                         target="_blank"
                         rel="noreferrer"
                     >
