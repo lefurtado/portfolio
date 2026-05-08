@@ -14,9 +14,9 @@ const shared = {
     },
     space: (n) => `${n * 4}px`,
     font: {
-        sans: "'Inter', system-ui, -apple-system, sans-serif",
-        mono: "'JetBrains Mono', ui-monospace, monospace",
-        display: "'Inter', system-ui, sans-serif",
+        sans: "'Inter Variable', 'Inter', system-ui, -apple-system, sans-serif",
+        mono: "'JetBrains Mono Variable', 'JetBrains Mono', ui-monospace, monospace",
+        display: "'Inter Variable', 'Inter', system-ui, sans-serif",
     },
     transition: {
         fast: '200ms cubic-bezier(0.22, 1, 0.36, 1)',
