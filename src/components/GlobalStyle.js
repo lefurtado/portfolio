@@ -24,10 +24,13 @@ export const GlobalStyle = createGlobalStyle`
         text-rendering: optimizeLegibility;
         transition: background-color ${({ theme }) => theme.transition.base},
                     color ${({ theme }) => theme.transition.base};
+        max-width: 100%;
+        overflow-x: hidden;
     }
 
-    body {
-        overflow-x: hidden;
+    #root {
+        max-width: 100%;
+        overflow-x: clip;
     }
 
     h1, h2, h3, h4, h5, h6 {

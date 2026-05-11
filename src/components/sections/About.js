@@ -9,6 +9,10 @@ const Grid = styled.div`
     grid-template-columns: 1fr;
     gap: 48px;
 
+    & > * {
+        min-width: 0;
+    }
+
     @media (min-width: 1024px) {
         grid-template-columns: 1.3fr 1fr;
         gap: 80px;
@@ -20,27 +24,38 @@ const Text = styled.div`
     display: flex;
     flex-direction: column;
     gap: 20px;
+    min-width: 0;
 
     & p {
         color: ${({ theme }) => theme.colors.textMuted};
-        font-size: 18px;
+        font-size: clamp(15px, 4vw, 18px);
         line-height: 1.7;
+        overflow-wrap: anywhere;
     }
 `;
 
 const Stats = styled.div`
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 16px;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+
+    @media (min-width: 480px) {
+        gap: 16px;
+    }
 `;
 
 const StatCard = styled.div`
-    padding: 24px 20px;
+    min-width: 0;
+    padding: 18px 14px;
     border-radius: ${({ theme }) => theme.radius.lg};
     border: 1px solid ${({ theme }) => theme.colors.border};
     background: ${({ theme }) => theme.colors.surface};
     transition: border-color ${({ theme }) => theme.transition.fast},
                 transform ${({ theme }) => theme.transition.fast};
+
+    @media (min-width: 480px) {
+        padding: 24px 20px;
+    }
 
     &:hover {
         border-color: ${({ theme }) => theme.colors.borderStrong};
@@ -49,21 +64,30 @@ const StatCard = styled.div`
 
     & strong {
         display: block;
-        font-size: 36px;
+        font-size: clamp(24px, 7vw, 36px);
         font-weight: 700;
         background: ${({ theme }) => theme.accent.gradient};
         -webkit-background-clip: text;
         background-clip: text;
         -webkit-text-fill-color: transparent;
         margin-bottom: 6px;
+        line-height: 1.1;
     }
 
     & span {
-        font-size: 12px;
+        display: block;
+        font-size: clamp(9px, 2.4vw, 12px);
         color: ${({ theme }) => theme.colors.textMuted};
         font-family: ${({ theme }) => theme.font.mono};
         text-transform: uppercase;
-        letter-spacing: 0.08em;
+        letter-spacing: 0;
+        line-height: 1.35;
+        hyphens: auto;
+        word-break: keep-all;
+
+        @media (min-width: 480px) {
+            letter-spacing: 0.06em;
+        }
     }
 `;
 

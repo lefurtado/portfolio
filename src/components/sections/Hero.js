@@ -75,21 +75,23 @@ const Greet = styled.div`
 
 const Title = styled.h1`
     font-family: ${({ theme }) => theme.font.display};
-    font-size: clamp(48px, 9vw, 128px);
+    font-size: clamp(40px, 11vw, 128px);
     font-weight: 700;
     letter-spacing: -0.04em;
     line-height: 0.95;
     color: ${({ theme }) => theme.colors.text};
     margin-bottom: 24px;
     max-width: 1000px;
+    overflow-wrap: anywhere;
 `;
 
 const Roles = styled.div`
-    font-size: clamp(20px, 3vw, 32px);
+    font-size: clamp(18px, 4.5vw, 32px);
     font-weight: 500;
     color: ${({ theme }) => theme.colors.textMuted};
     margin-bottom: 32px;
     min-height: 1.2em;
+    overflow-wrap: anywhere;
 
     & .Typewriter__cursor {
         color: ${({ theme }) => theme.colors.accent};
@@ -97,11 +99,12 @@ const Roles = styled.div`
 `;
 
 const Tagline = styled.p`
-    font-size: 18px;
+    font-size: clamp(15px, 4vw, 18px);
     color: ${({ theme }) => theme.colors.textMuted};
     max-width: 560px;
     margin-bottom: 40px;
     line-height: 1.6;
+    overflow-wrap: anywhere;
 `;
 
 const Actions = styled.div`
