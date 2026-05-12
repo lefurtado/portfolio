@@ -3,6 +3,7 @@ import { useTranslation } from 'react-i18next';
 import { Container, Section } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
 import { Marquee } from '../ui/Marquee';
+import profileImage from '../../assets/images/profile-pixel.png';
 
 const Grid = styled.div`
     display: grid;
@@ -14,9 +15,13 @@ const Grid = styled.div`
     }
 
     @media (min-width: 1024px) {
-        grid-template-columns: 1.3fr 1fr;
-        gap: 80px;
+        grid-template-columns: 1.2fr 0.8fr 1fr;
+        gap: 48px;
         align-items: start;
+    }
+
+    @media (min-width: 1280px) {
+        gap: 64px;
     }
 `;
 
@@ -34,6 +39,31 @@ const Text = styled.div`
     }
 `;
 
+const ImageCard = styled.div`
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 24px;
+    border-radius: ${({ theme }) => theme.radius.lg};
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    background: ${({ theme }) => theme.colors.surface};
+    transition: border-color ${({ theme }) => theme.transition.fast},
+                transform ${({ theme }) => theme.transition.fast};
+
+    &:hover {
+        border-color: ${({ theme }) => theme.colors.borderStrong};
+        transform: translateY(-4px);
+    }
+
+    & img {
+        width: 100%;
+        max-width: 220px;
+        height: auto;
+        border-radius: 50%;
+        object-fit: cover;
+    }
+`;
+
 const Stats = styled.div`
     display: grid;
     grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -41,6 +71,11 @@ const Stats = styled.div`
 
     @media (min-width: 480px) {
         gap: 16px;
+    }
+
+    @media (min-width: 1024px) {
+        grid-template-columns: 1fr;
+        gap: 12px;
     }
 `;
 
@@ -130,6 +165,9 @@ export function About() {
                         <p>{t('about.p1')}</p>
                         <p>{t('about.p2')}</p>
                     </Text>
+                    <ImageCard>
+                        <img src={profileImage} alt="Leandro Furtado" />
+                    </ImageCard>
                     <Stats>
                         <StatCard>
                             <strong>3+</strong>
