@@ -168,8 +168,8 @@ export function Contact() {
             <h2>{t("contact.title")}</h2>
             <p>{t("contact.subtitle")}</p>
             <Direct>
-              <DirectItem href="mailto:le_furtado@outlook.com.br">
-                <FiMail size={18} /> le_furtado@outlook.com.br
+              <DirectItem href="mailto:wexcodebr@gmail.com">
+                <FiMail size={18} /> wexcodebr@gmail.com
               </DirectItem>
               <DirectItem
                 href="https://wa.me/5511941198816?text=Olá, Leandro! Gostaria de conversar sobre oportunidades."
