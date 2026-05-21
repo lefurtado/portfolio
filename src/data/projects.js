@@ -39,6 +39,6 @@ export const projects = [
         gallery: [petshopMockup],
         badges: ['empresa', 'em_dev'],
         stack: ['nextjs', 'typescript', 'supabase', 'prisma', 'shadcn'],
-        link: null,
+        link: 'https://petshop-system-seven.vercel.app/',
     },
 ];
