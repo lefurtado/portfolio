@@ -46,13 +46,18 @@ const ImageCard = styled.div`
     padding: 24px;
     border-radius: ${({ theme }) => theme.radius.lg};
     border: 1px solid ${({ theme }) => theme.colors.border};
-    background: ${({ theme }) => theme.colors.surface};
+    background: ${({ theme, theme: { name } }) => 
+        name === 'dark' ? 'rgba(17, 17, 24, 0.6)' : 'rgba(255, 255, 255, 0.8)'};
+    backdrop-filter: blur(8px);
     transition: border-color ${({ theme }) => theme.transition.fast},
-                transform ${({ theme }) => theme.transition.fast};
+                transform ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.borderStrong};
-        transform: translateY(-4px);
+        border-color: ${({ theme }) => theme.colors.accent};
+        transform: translateY(-6px) scale(1.02);
+        box-shadow: 0 12px 30px ${({ theme }) => theme.colors.glow};
     }
 
     & img {
@@ -61,6 +66,13 @@ const ImageCard = styled.div`
         height: auto;
         border-radius: 50%;
         object-fit: cover;
+        border: 2px solid ${({ theme }) => theme.colors.borderStrong};
+        padding: 4px;
+        transition: border-color ${({ theme }) => theme.transition.fast};
+    }
+
+    &:hover img {
+        border-color: ${({ theme }) => theme.colors.accentSecondary};
     }
 `;
 
@@ -84,17 +96,21 @@ const StatCard = styled.div`
     padding: 18px 14px;
     border-radius: ${({ theme }) => theme.radius.lg};
     border: 1px solid ${({ theme }) => theme.colors.border};
-    background: ${({ theme }) => theme.colors.surface};
+    background: ${({ theme, theme: { name } }) => 
+        name === 'dark' ? 'rgba(17, 17, 24, 0.6)' : 'rgba(255, 255, 255, 0.8)'};
+    backdrop-filter: blur(8px);
     transition: border-color ${({ theme }) => theme.transition.fast},
-                transform ${({ theme }) => theme.transition.fast};
+                transform ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
 
     @media (min-width: 480px) {
         padding: 24px 20px;
     }
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.borderStrong};
-        transform: translateY(-4px);
+        border-color: ${({ theme }) => theme.colors.accentSecondary};
+        transform: translateY(-6px);
+        box-shadow: 0 10px 24px rgba(0, 224, 184, 0.15);
     }
 
     & strong {
@@ -128,26 +144,41 @@ const StatCard = styled.div`
 
 const StackWrap = styled.div`
     margin-top: 64px;
+    padding: 8px 0;
 `;
 
 const StackItem = styled.div`
     font-family: ${({ theme }) => theme.font.mono};
-    font-size: 14px;
+    font-size: 13px;
     font-weight: 500;
-    color: ${({ theme }) => theme.colors.textMuted};
+    color: ${({ theme }) => theme.colors.text};
     text-transform: uppercase;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     white-space: nowrap;
-    display: flex;
+    display: inline-flex;
     align-items: center;
-    gap: 48px;
+    gap: 8px;
+    padding: 10px 20px;
+    background: ${({ theme, theme: { name } }) => 
+        name === 'dark' ? 'rgba(255, 255, 255, 0.03)' : 'rgba(0, 0, 0, 0.03)'};
+    border: 1px solid ${({ theme }) => theme.colors.border};
+    border-radius: ${({ theme }) => theme.radius.full};
+    transition: border-color ${({ theme }) => theme.transition.fast},
+                background ${({ theme }) => theme.transition.fast};
 
-    &::after {
+    &::before {
         content: '';
         width: 6px;
         height: 6px;
         border-radius: 999px;
-        background: ${({ theme }) => theme.colors.accent};
+        background: ${({ theme }) => theme.colors.accentSecondary};
+        box-shadow: 0 0 6px ${({ theme }) => theme.colors.accentSecondary};
+    }
+
+    &:hover {
+        border-color: ${({ theme }) => theme.colors.accent};
+        background: ${({ theme, theme: { name } }) => 
+            name === 'dark' ? 'rgba(124, 92, 255, 0.1)' : 'rgba(124, 92, 255, 0.05)'};
     }
 `;
 

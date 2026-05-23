@@ -19,11 +19,11 @@ const base = css`
     white-space: nowrap;
 
     &:hover {
-        transform: translateY(-2px);
+        transform: translateY(-3px);
     }
 
     &:active {
-        transform: translateY(0);
+        transform: translateY(-1px) scale(0.97);
     }
 
     &:disabled {
@@ -51,6 +51,7 @@ const variants = css`
             border-color: ${theme.colors.borderStrong};
             &:hover {
                 background: ${theme.colors.surface};
+                border-color: ${theme.colors.accent};
             }
         `}
 
@@ -60,8 +61,25 @@ const variants = css`
             background: ${theme.accent.gradient};
             color: #fff;
             box-shadow: 0 8px 24px ${theme.colors.glow};
+            position: relative;
+            z-index: 1;
+            overflow: hidden;
+
+            &::before {
+                content: '';
+                position: absolute;
+                inset: 0;
+                background: ${theme.accent.gradientSecondary};
+                opacity: 0;
+                z-index: -1;
+                transition: opacity ${theme.transition.base};
+            }
+
             &:hover {
                 box-shadow: 0 12px 32px ${theme.colors.glow};
+                &::before {
+                    opacity: 1;
+                }
             }
         `}
 `;

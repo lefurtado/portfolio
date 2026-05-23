@@ -4,6 +4,7 @@ const shared = {
         secondary: '#00E0B8',
         gradient: 'linear-gradient(135deg, #7C5CFF 0%, #00E0B8 100%)',
         gradientSoft: 'linear-gradient(135deg, rgba(124,92,255,0.15) 0%, rgba(0,224,184,0.15) 100%)',
+        gradientSecondary: 'linear-gradient(135deg, #00E0B8 0%, #7C5CFF 100%)',
     },
     radius: {
         sm: '6px',
@@ -41,8 +42,8 @@ export const darkTheme = {
         border: 'rgba(255,255,255,0.08)',
         borderStrong: 'rgba(255,255,255,0.14)',
         text: '#E6E6F0',
-        textMuted: '#9A9AB0',
-        textSubtle: '#6B6B80',
+        textMuted: '#AFAFD0',
+        textSubtle: '#7E7E9C',
         accent: shared.accent.primary,
         accentSecondary: shared.accent.secondary,
         success: '#00E0B8',

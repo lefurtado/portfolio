@@ -59,16 +59,16 @@ const LinkItem = styled.li`
         padding: 8px 14px;
         background: transparent;
         border: 0;
-        color: ${({ theme, $active }) => ($active ? theme.colors.text : theme.colors.textMuted)};
+        color: ${({ theme, $active }) => ($active ? theme.colors.accent : theme.colors.textMuted)};
         font-size: 13px;
-        font-weight: 500;
+        font-weight: 600;
         border-radius: ${({ theme }) => theme.radius.full};
         cursor: pointer;
         transition: color ${({ theme }) => theme.transition.fast},
                     background ${({ theme }) => theme.transition.fast};
 
         &:hover {
-            color: ${({ theme }) => theme.colors.text};
+            color: ${({ theme }) => theme.colors.accent};
             background: ${({ theme }) => theme.colors.surfaceElevated};
         }
     }

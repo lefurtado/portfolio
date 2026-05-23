@@ -1,9 +1,14 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import { BsCodeSlash, BsPhone } from 'react-icons/bs';
 import { DiReact } from 'react-icons/di';
 import { useTranslation } from 'react-i18next';
 import { Container, Section } from '../ui/Container';
 import { SectionHeader } from '../ui/SectionHeader';
+
+const float = keyframes`
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-6px); }
+`;
 
 const Grid = styled.div`
     display: grid;
@@ -15,6 +20,20 @@ const Grid = styled.div`
     }
 `;
 
+const IconWrap = styled.div`
+    width: 56px;
+    height: 56px;
+    border-radius: ${({ theme }) => theme.radius.md};
+    background: ${({ theme }) => theme.accent.gradient};
+    color: #fff;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 24px;
+    transition: transform ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
+`;
+
 const Card = styled.article`
     position: relative;
     padding: 32px;
@@ -23,7 +42,8 @@ const Card = styled.article`
     background: ${({ theme }) => theme.colors.surface};
     overflow: hidden;
     transition: border-color ${({ theme }) => theme.transition.base},
-                transform ${({ theme }) => theme.transition.base};
+                transform ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
 
     &::before {
         content: '';
@@ -35,11 +55,17 @@ const Card = styled.article`
     }
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.borderStrong};
-        transform: translateY(-4px);
+        border-color: ${({ theme }) => theme.colors.accent};
+        transform: translateY(-6px);
+        box-shadow: 0 12px 30px ${({ theme }) => theme.colors.glow};
 
         &::before {
             opacity: 1;
+        }
+
+        ${IconWrap} {
+            animation: ${float} 2s ease-in-out infinite;
+            box-shadow: 0 4px 12px ${({ theme }) => theme.colors.glow};
         }
     }
 
@@ -54,18 +80,6 @@ const Num = styled.div`
     color: ${({ theme }) => theme.colors.textSubtle};
     margin-bottom: 24px;
     letter-spacing: 0.08em;
-`;
-
-const IconWrap = styled.div`
-    width: 56px;
-    height: 56px;
-    border-radius: ${({ theme }) => theme.radius.md};
-    background: ${({ theme }) => theme.accent.gradient};
-    color: #fff;
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 24px;
 `;
 
 const Title = styled.h3`

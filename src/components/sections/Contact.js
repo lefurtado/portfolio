@@ -76,8 +76,18 @@ const Form = styled.form`
   gap: 16px;
   padding: 32px;
   border-radius: ${({ theme }) => theme.radius.xl};
-  border: 1px solid ${({ theme }) => theme.colors.border};
-  background: ${({ theme }) => theme.colors.surface};
+  border: 1px solid ${({ theme }) => theme.colors.borderStrong};
+  background: ${({ theme, theme: { name } }) => 
+    name === 'dark' ? 'rgba(17, 17, 24, 0.5)' : 'rgba(255, 255, 255, 0.7)'};
+  backdrop-filter: blur(12px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+  transition: border-color ${({ theme }) => theme.transition.base},
+              box-shadow ${({ theme }) => theme.transition.base};
+
+  &:hover {
+    border-color: ${({ theme }) => theme.colors.accent};
+    box-shadow: 0 12px 40px rgba(124, 92, 255, 0.1);
+  }
 `;
 
 const Field = styled.div`
@@ -87,7 +97,8 @@ const Field = styled.div`
 
   & input,
   & textarea {
-    background: ${({ theme }) => theme.colors.bg};
+    background: ${({ theme, theme: { name } }) => 
+      name === 'dark' ? 'rgba(10, 10, 15, 0.6)' : 'rgba(244, 244, 247, 0.6)'};
     border: 1px solid ${({ theme }) => theme.colors.border};
     border-radius: ${({ theme }) => theme.radius.md};
     padding: 14px 16px;
@@ -95,7 +106,9 @@ const Field = styled.div`
     font-size: 15px;
     font-family: inherit;
     outline: none;
-    transition: border-color ${({ theme }) => theme.transition.fast};
+    transition: border-color ${({ theme }) => theme.transition.fast},
+                box-shadow ${({ theme }) => theme.transition.fast},
+                background-color ${({ theme }) => theme.transition.fast};
     width: 100%;
     resize: vertical;
   }
@@ -103,6 +116,8 @@ const Field = styled.div`
   & input:focus,
   & textarea:focus {
     border-color: ${({ theme }) => theme.colors.accent};
+    background-color: ${({ theme }) => theme.colors.bg};
+    box-shadow: 0 0 12px ${({ theme }) => theme.colors.glow};
   }
 `;
 

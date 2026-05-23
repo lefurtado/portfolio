@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { keyframes } from 'styled-components';
 import Typewriter from 'typewriter-effect';
 import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 import { FiArrowDown, FiArrowUpRight, FiDownload } from 'react-icons/fi';
@@ -47,6 +47,11 @@ const GlowAlt = styled.div`
     pointer-events: none;
 `;
 
+const pan = keyframes`
+    from { background-position: 0 0; }
+    to { background-position: 64px 64px; }
+`;
+
 const Grid = styled.div`
     position: absolute;
     inset: 0;
@@ -57,8 +62,9 @@ const Grid = styled.div`
     background-size: 64px 64px;
     mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
     -webkit-mask-image: radial-gradient(ellipse at center, #000 0%, transparent 70%);
-    opacity: 0.5;
+    opacity: 0.4;
     pointer-events: none;
+    animation: ${pan} 20s linear infinite;
 `;
 
 const Inner = styled(Container)`
@@ -130,12 +136,14 @@ const Socials = styled.div`
         color: ${({ theme }) => theme.colors.textMuted};
         transition: color ${({ theme }) => theme.transition.fast},
                     border-color ${({ theme }) => theme.transition.fast},
-                    transform ${({ theme }) => theme.transition.fast};
+                    transform ${({ theme }) => theme.transition.fast},
+                    box-shadow ${({ theme }) => theme.transition.fast};
 
         &:hover {
-            color: ${({ theme }) => theme.colors.text};
-            border-color: ${({ theme }) => theme.colors.borderStrong};
-            transform: translateY(-2px);
+            color: ${({ theme }) => theme.colors.accent};
+            border-color: ${({ theme }) => theme.colors.accent};
+            transform: translateY(-4px) rotate(8deg);
+            box-shadow: 0 4px 12px ${({ theme }) => theme.colors.glow};
         }
     }
 `;
@@ -162,6 +170,13 @@ const Scroll = styled.button`
     text-transform: uppercase;
     letter-spacing: 0.16em;
     cursor: pointer;
+    transition: color ${({ theme }) => theme.transition.fast},
+                transform ${({ theme }) => theme.transition.fast};
+
+    &:hover {
+        color: ${({ theme }) => theme.colors.accent};
+        transform: translateX(-50%) translateY(-2px);
+    }
 
     & svg {
         animation: bounce 2s ease-in-out infinite;

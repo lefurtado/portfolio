@@ -19,27 +19,20 @@ const List = styled.div`
     }
 `;
 
-const Row = styled.article`
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 48px;
-    align-items: center;
-
-    @media (max-width: 768px) {
-        grid-template-columns: 1fr;
-        gap: 24px;
-    }
-`;
-
 const Media = styled.div`
     position: relative;
     border-radius: ${({ theme }) => theme.radius.xl};
     border: 1px solid ${({ theme }) => theme.colors.border};
-    background: ${({ theme }) => theme.colors.surfaceElevated};
+    background: ${({ theme, theme: { name } }) => 
+        name === 'dark' ? 'rgba(22, 22, 31, 0.6)' : 'rgba(244, 244, 247, 0.8)'};
+    backdrop-filter: blur(8px);
     overflow: hidden;
     aspect-ratio: 16 / 10;
     padding: 24px;
     order: ${({ $reverse }) => ($reverse ? 2 : 1)};
+    transition: border-color ${({ theme }) => theme.transition.base},
+                transform ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
 
     @media (max-width: 768px) {
         order: 1;
@@ -51,10 +44,6 @@ const Media = styled.div`
         height: 100%;
         object-fit: contain;
         transition: transform ${({ theme }) => theme.transition.slow};
-    }
-
-    &:hover img {
-        transform: scale(1.02);
     }
 `;
 
@@ -117,20 +106,57 @@ const DetailsBtn = styled.button`
     cursor: pointer;
     transition: border-color ${({ theme }) => theme.transition.fast},
                 color ${({ theme }) => theme.transition.fast},
-                background ${({ theme }) => theme.transition.fast};
+                background ${({ theme }) => theme.transition.fast},
+                transform ${({ theme }) => theme.transition.fast};
 
     svg {
         transition: transform ${({ theme }) => theme.transition.fast};
     }
+`;
+
+const Row = styled.article`
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 48px;
+    align-items: center;
+    padding: 32px;
+    border-radius: ${({ theme }) => theme.radius.xl};
+    border: 1px solid transparent;
+    transition: border-color ${({ theme }) => theme.transition.base},
+                background-color ${({ theme }) => theme.transition.base},
+                box-shadow ${({ theme }) => theme.transition.base};
+
+    @media (max-width: 768px) {
+        grid-template-columns: 1fr;
+        gap: 24px;
+        padding: 16px;
+    }
 
     &:hover {
+        border-color: ${({ theme }) => theme.colors.borderStrong};
+        background-color: ${({ theme, theme: { name } }) => 
+            name === 'dark' ? 'rgba(255, 255, 255, 0.01)' : 'rgba(0, 0, 0, 0.01)'};
+    }
+
+    &:hover ${Media} {
+        border-color: ${({ theme }) => theme.colors.accent};
+        box-shadow: 0 12px 28px ${({ theme }) => theme.colors.glow};
+        transform: translateY(-4px);
+    }
+
+    &:hover ${Media} img {
+        transform: scale(1.05);
+    }
+
+    &:hover ${DetailsBtn} {
         border-color: ${({ theme }) => theme.colors.accent};
         color: ${({ theme }) => theme.colors.accent};
         background: ${({ theme }) => theme.colors.surfaceElevated};
+        transform: translateY(-2px);
     }
 
-    &:hover svg {
-        transform: translateX(4px);
+    &:hover ${DetailsBtn} svg {
+        transform: translateX(6px);
     }
 `;
 

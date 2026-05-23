@@ -109,23 +109,35 @@ const Skill = styled.div`
     padding: 16px;
     border-radius: ${({ theme }) => theme.radius.md};
     border: 1px solid ${({ theme }) => theme.colors.border};
-    background: ${({ theme }) => theme.colors.surface};
+    background: ${({ theme, theme: { name } }) => 
+        name === 'dark' ? 'rgba(17, 17, 24, 0.6)' : 'rgba(255, 255, 255, 0.8)'};
+    backdrop-filter: blur(8px);
     color: ${({ theme }) => theme.colors.text};
     font-size: 14px;
     transition: border-color ${({ theme }) => theme.transition.fast},
                 background ${({ theme }) => theme.transition.fast},
+                box-shadow ${({ theme }) => theme.transition.fast},
                 transform ${({ theme }) => theme.transition.fast};
 
     & > span:first-child {
         color: ${({ theme }) => theme.colors.accent};
         display: inline-flex;
         flex-shrink: 0;
+        transition: color ${({ theme }) => theme.transition.fast},
+                    transform ${({ theme }) => theme.transition.fast};
     }
 
     &:hover {
-        border-color: ${({ theme }) => theme.colors.accent};
-        background: ${({ theme }) => theme.colors.surfaceElevated};
-        transform: translateY(-2px);
+        border-color: ${({ theme }) => theme.colors.accentSecondary};
+        background: ${({ theme, theme: { name } }) => 
+            name === 'dark' ? 'rgba(22, 22, 31, 0.8)' : '#ffffff'};
+        transform: translateY(-3px);
+        box-shadow: 0 6px 16px rgba(0, 224, 184, 0.12);
+
+        & > span:first-child {
+            color: ${({ theme }) => theme.colors.accentSecondary};
+            transform: scale(1.15) rotate(4deg);
+        }
     }
 `;
 
