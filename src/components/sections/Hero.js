@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 import Typewriter from 'typewriter-effect';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 import { FiArrowDown, FiArrowUpRight, FiDownload } from 'react-icons/fi';
 import { useTranslation } from 'react-i18next';
 import { Container } from '../ui/Container';
@@ -220,6 +220,9 @@ export function Hero() {
                         </a>
                         <a href="https://www.linkedin.com/in/le-furtado/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <FaLinkedin size={18} />
+                        </a>
+                        <a href="https://medium.com/@le_furtado" target="_blank" rel="noreferrer" aria-label="Medium">
+                            <FaMedium size={18} />
                         </a>
                     </Socials>
                 </Actions>

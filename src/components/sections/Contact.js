@@ -8,7 +8,7 @@ import {
   FiPhone,
   FiMapPin,
 } from "react-icons/fi";
-import { FaGithub, FaLinkedin } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaMedium } from "react-icons/fa";
 import emailjs from "@emailjs/browser";
 import { useTranslation } from "react-i18next";
 import { Container, Section } from "../ui/Container";
@@ -194,6 +194,13 @@ export function Contact() {
                 rel="noreferrer"
               >
                 <FaLinkedin size={18} /> linkedin.com/in/le-furtado
+              </DirectItem>
+              <DirectItem
+                href="https://medium.com/@le_furtado"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <FaMedium size={18} /> medium.com/@le_furtado
               </DirectItem>
             </Direct>
           </Left>

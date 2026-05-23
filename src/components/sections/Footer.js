@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaMedium } from 'react-icons/fa';
 import { useTranslation } from 'react-i18next';
 import { Container } from '../ui/Container';
 
@@ -77,6 +77,9 @@ export function Footer() {
                         </a>
                         <a href="https://www.linkedin.com/in/le-furtado/" target="_blank" rel="noreferrer" aria-label="LinkedIn">
                             <FaLinkedin size={16} />
+                        </a>
+                        <a href="https://medium.com/@le_furtado" target="_blank" rel="noreferrer" aria-label="Medium">
+                            <FaMedium size={16} />
                         </a>
                     </Socials>
                 </Inner>
