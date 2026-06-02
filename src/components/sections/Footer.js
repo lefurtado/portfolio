@@ -66,7 +66,7 @@ export function Footer() {
             <Container>
                 <Inner>
                     <Brand>
-                        © {year} <strong>Leandro Furtado</strong> — {t('footer.rights')}
+                        © {year} <strong>Leandro Furtado</strong>. {t('footer.rights')}
                     </Brand>
                     <Brand>
                         {t('footer.made')} <span>♥</span> {t('footer.and')}
