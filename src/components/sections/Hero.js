@@ -188,9 +188,15 @@ const Scroll = styled.button`
     }
 `;
 
+const RESUME_URL = {
+    en: 'https://drive.google.com/file/d/1OqrKShjRHapfWmNFR0uddPz8NNjYnNqX/view?usp=drive_link',
+    pt: 'https://drive.google.com/file/d/1hVHL6wBzwotljdU3CmxJowqwyZqaxQtY/view?usp=drive_link',
+};
+
 export function Hero() {
-    const { t } = useTranslation();
+    const { t, i18n } = useTranslation();
     const roles = t('hero.roles', { returnObjects: true });
+    const resumeUrl = i18n.language?.startsWith('en') ? RESUME_URL.en : RESUME_URL.pt;
 
     return (
         <Wrap id="hero">
@@ -223,7 +229,7 @@ export function Hero() {
                     </Button>
                     <ButtonLink
                         $variant="ghost"
-                        href="https://drive.google.com/file/d/1IkVAmvTuqCFW8jf5HjBCJPhumUV1LfK9/view?usp=sharing"
+                        href={resumeUrl}
                         target="_blank"
                         rel="noreferrer"
                     >
